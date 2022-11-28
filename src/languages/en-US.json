@@ -1,1 +1,259 @@
-{}
+{
+  "appSettings": "settings",
+  "examples": {
+    "cards": {
+      "infoCards": {
+        "social": "social: ",
+        "edit": "edit"
+      },
+      "masterCard": {
+        "wifi": "wifi",
+        "cardHolder": "Card Holder",
+        "expires": "Expires"
+      }
+    },
+    "charts": {
+      "schedule": "schedule"
+    },
+    "configurator": {
+      "muiConfigurator": "Material UI Configurator",
+      "seeDashboardOptions": "See our dashboard options.",
+      "close": "close",
+      "sidenavColors": "Sidenav Colors",
+      "sidenavType": "Sidenav Type",
+      "chooseSidenavTypes": "Choose between different sidenav types.",
+      "dark": "Dark",
+      "transparent": "Transparent",
+      "white": "White",
+      "navbarFixed": "Navbar Fixed",
+      "lightOrDark": "Light / Dark",
+      "viewDocs": "view documentation",
+      "star": "Star",
+      "thanksForSharing": "Thank you for sharing!",
+      "tweet": " Tweet",
+      "share": " Share"
+    },
+    "footer": {
+      "madeWith": ", made with",
+      "favorite": "favorite",
+      "by": "by",
+      "forABetterWeb": "for a better web."
+    },
+    "dashboardNavbar": {
+      "email": "email",
+      "podcasts": "podcasts",
+      "shoppingCart": "shopping_cart",
+      "accountCircle": "account_circle",
+      "settings": "settings",
+      "notifications": "notifications"
+    },
+    "defaultNavbar": {
+      "muiDashboard2": "Material Dashboard 2"
+    },
+    "sidenav": {
+      "close": "close",
+      "upgrade": "upgrade to pro"
+    },
+    "dataTable": {
+      "headCell": {
+        "arrowDropUp": "arrow_drop_up",
+        "arrowDropDown": "arrow_drop_down"
+      },
+      "entriesPerPage": " entries per page",
+      "showing": "Showing",
+      "to": "to",
+      "of": "of",
+      "entries": "entries",
+      "chevronLeft": "chevron_left",
+      "chevronRight": "chevron_right"
+    }
+  },
+  "components": {
+    "mdSnackbar": {
+      "close": "close"
+    }
+  },
+  "layouts": {
+    "authentication": {
+      "footer": {
+        "aboutUs": "About Us",
+        "blog": "Blog",
+        "lisence": "License",
+        "madeWith": ", made with",
+        "favorite": "favorite",
+        "by": "by",
+        "creativeTimSpace": " Creative Tim ",
+        "forABetterWeb": "for a better web.",
+        "creativeTim": "Creative Tim"
+      },
+      "resetPassword": {
+        "resetPassword": "Reset Password",
+        "willRecieveEmail": "You will receive an e-mail in maximum 60 seconds",
+        "reset": "reset"
+      },
+      "signIn": {
+        "rememberMe": " Remember me",
+        "signInUncap": "sign in",
+        "dontHaveAccount": "Don't have an account?",
+        "signUp": "Sign up",
+        "signIn": "Sign in",
+        "signInCap": "Sign In",
+        "joinUs": "Join us today",
+        "enterCredentials": "Enter your email and password to register",
+        "iAgree": " I agree the ",
+        "termsAndConditions": "Terms and Conditions",
+        "alreadyHaveAccount": "Already have an account?"
+      }
+    },
+    "billing": {
+      "bill": {
+        "delete": "delete",
+        "spaceDelete": " delete",
+        "edit": "edit",
+        "spaceEdit": " edit",
+        "companyName": "Company Name: ",
+        "emailAddress": "Email Address: ",
+        "vatNumber": "VAT Number: "
+      },
+      "billingInformation": {
+        "billingInformation": "Billing Information"
+      },
+      "invoice": {
+        "pictureAsPdf": "picture_as_pdf",
+        "pdf": " PDF"
+      },
+      "invoices": {
+        "invoices": "Invoices",
+        "viewAll": "view all"
+      },
+      "paymentMethod": {
+        "paymentMethod": "Payment Method",
+        "add": "add",
+        "addNewCard": " add new card",
+        "cardExample1": "**** **** **** 7852",
+        "edit": "edit",
+        "cardExample2": "**** **** **** 5248"
+      },
+      "transactions": {
+        "yourTransactions": "Your Transactions",
+        "dateRange": "date_range",
+        "exampleDatesRange": "23 - 30 March 2020",
+        "newest": "newest",
+        "yesterday": "yesterday"
+      }
+    },
+    "dashboard": {
+      "ordersOverview": {
+        "ordersOverview": "Orders overview",
+        "arrowUpward": "arrow_upward",
+        "percentage": "24%",
+        "thisMonth": "this month"
+      },
+      "projects": {
+        "data": {
+          "3k": "$3,000",
+          "notSet": "Not set",
+          "20k": "$20,500",
+          "5k": "$500",
+          "2k": "$2,000",
+          "14k": "$14,000"
+        },
+        "action": "Action",
+        "anotherAction": "Another action",
+        "somethingElse": "Something else",
+        "projects": "Projects",
+        "done": "done",
+        "30Done": "30 done",
+        "thisMonth": "this month",
+        "moreVert": "more_vert"
+      },
+      "plusPercentage": "+15%",
+      "increaseTodaySales": ") increase in today sales."
+    },
+    "notifications": {
+      "alerts": "Alerts",
+      "notifications": "Notifications",
+      "notificationToastInfo": "Notifications on this page use Toasts from Bootstrap. Read more details here.",
+      "successNotification": "success notification",
+      "infoNotification": "info notification",
+      "warningNotification": "warning notification",
+      "errorNotification": "error notification",
+      "alertWith": "alert with",
+      "aSimple": "A simple",
+      "exampleLink": "an example link",
+      "clickSuggestion": ". Give it a click if you like."
+    },
+    "profile": {
+      "header": {
+        "name": "Richard Davis",
+        "jobTitle": "CEO / Co-Founder",
+        "home": "home",
+        "email": "email",
+        "settings": "settings"
+      },
+      "platformSettings": {
+        "subscribe": "Subscribe to newsletter",
+        "platformSettings": "platform settings",
+        "account": "account",
+        "emailWhenFollow": "Email me when someone follows me",
+        "emailWhenAnswer": "Email me when someone answers on my post",
+        "emailWhenMention": "Email me when someone mentions me",
+        "application": "application",
+        "newLaunches": "New launches and projects",
+        "monthlyUpdates": "Monthly product updates"
+      },
+      "projects": "Projects",
+      "architects": "Architects design houses"
+    },
+    "rtl": {
+      "src/layouts/rtl/components/OrdersOverview/index.js:37:80:37:92": "arrow_upward",
+      "src/layouts/rtl/components/OrdersOverview/index.js:41:15:41:18": "24%",
+      "src/layouts/rtl/components/Projects/data/index.js:115:13:115:20": "$14,000",
+      "src/layouts/rtl/components/Projects/data/index.js:136:13:136:19": "$3,000",
+      "src/layouts/rtl/components/Projects/data/index.js:180:13:180:20": "$20,500",
+      "src/layouts/rtl/components/Projects/data/index.js:198:13:198:17": "$500",
+      "src/layouts/rtl/components/Projects/data/index.js:219:13:219:19": "$2,000",
+      "src/layouts/rtl/components/Projects/index.js:75:15:75:19": "done",
+      "src/layouts/rtl/components/Projects/index.js:78:29:78:37": "30 انتهى",
+      "src/layouts/rtl/components/Projects/index.js:84:13:84:22": "more_vert",
+      "src/layouts/rtl/index.js:139:32:139:36": "+15%"
+    },
+    "tables": {
+      "data": {
+        "authorsTable": {
+          "edit": "Edit",
+          "exampleDate1": "19/09/17",
+          "exampleDate2": "24/12/08",
+          "exampleDate3": "04/10/21",
+          "exampleDate4": "14/09/20",
+          "exampleDate5": "23/04/18",
+          "exampleDate6": "11/01/19"
+        },
+        "projectsTable": {
+          "moreVert": "more_vert",
+          "3k": "$3,400",
+          "cancelled": "cancelled",
+          "14k": "$14,000",
+          "working": "working",
+          "1k": "$1,000",
+          "2c300k": "$2,300",
+          "done": "done",
+          "2c500k": "$2,500",
+          "5k": "$5,000"
+        }
+      },
+      "authorsTableTitle": "Authors Table",
+      "projectsTableTitle": "Projects Table"
+    }
+  },
+  "routes": {
+    "login": "login",
+    "assignment": "assignment",
+    "dashboard": "dashboard",
+    "tableView": "table_view",
+    "receiptLong": "receipt_long",
+    "formatTextDirRTL": "format_textdirection_r_to_l",
+    "notifications": "notifications",
+    "person": "person"
+  }
+}
