@@ -20,11 +20,14 @@ import App from "App";
 
 // Material Dashboard 2 React Context Provider
 import { MaterialUIControllerProvider } from "context";
+import { LanguageProvider } from "context/language-context";
 
 ReactDOM.render(
   <BrowserRouter>
     <MaterialUIControllerProvider>
-      <App />
+      <LanguageProvider>
+        <App />
+      </LanguageProvider>
     </MaterialUIControllerProvider>
   </BrowserRouter>,
   document.getElementById("root")

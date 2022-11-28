@@ -11,24 +11,34 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "prettier"],
+  "plugins": ["import"],
   "rules": {
-    "prettier/prettier": [
+    "react/function-component-definition": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": "off",
+    "react/prop-types": "off",
+    "react/jsx-no-constructed-context-values": "off",
+    "import/prefer-default-export": "off",
+    "linebreak-style": "off",
+    "no-confusing-arrow": "off",
+    "class-methods-use-this": "off",
+    "comma-dangle": "off",
+    "implicit-arrow-linebreak": "off",
+    "operator-linebreak": "off",
+    "function-paren-newline": "off",
+    "no-param-reassign": [
       "error",
       {
-        "endOfLine": "auto"
+        "props": true,
+        "ignorePropertyModificationsFor": ["state"]
       }
     ],
-    "default-param-last": "off",
-    "react/react-in-jsx-scope": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "react/jsx-props-no-spreading": [
-      1,
-      {
-        "custom": "ignore"
-      }
-    ],
-    "react/jsx-curly-spacing": [2, "never"]
+    "no-plusplus": "off",
+    "no-return-assign": "error",
+    "no-underscore-dangle": "error",
+    "no-unused-vars": "off",
+    "no-use-before-define": "off",
+    "object-curly-newline": "off"
   },
   "settings": { "import/resolver": { "node": { "paths": ["src"] } } }
 }
