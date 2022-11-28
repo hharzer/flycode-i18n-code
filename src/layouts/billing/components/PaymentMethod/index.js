@@ -30,8 +30,10 @@ import visaLogo from "assets/images/logos/visa.png";
 
 // Material Dashboard 2 React context
 import { useMaterialUIController } from "context";
+import { useTranslation } from "react-i18next";
 
 function PaymentMethod() {
+  const { t } = useTranslation();
   const [controller] = useMaterialUIController();
   const { darkMode } = controller;
 
@@ -39,11 +41,11 @@ function PaymentMethod() {
     <Card id="delete-account">
       <MDBox pt={2} px={2} display="flex" justifyContent="space-between" alignItems="center">
         <MDTypography variant="h6" fontWeight="medium">
-          Payment Method
+          {t("layouts.billing.paymentMethod.paymentMethod")}
         </MDTypography>
         <MDButton variant="gradient" color="dark">
-          <Icon sx={{ fontWeight: "bold" }}>add</Icon>
-          &nbsp;add new card
+          <Icon sx={{ fontWeight: "bold" }}>{t("layouts.billing.paymentMethod.add")}</Icon>
+          &nbsp;{t("layouts.billing.paymentMethod.addNewCard")}
         </MDButton>
       </MDBox>
       <MDBox p={2}>
@@ -62,12 +64,12 @@ function PaymentMethod() {
             >
               <MDBox component="img" src={masterCardLogo} alt="master card" width="10%" mr={2} />
               <MDTypography variant="h6" fontWeight="medium">
-                ****&nbsp;&nbsp;****&nbsp;&nbsp;****&nbsp;&nbsp;7852
+                {t("layouts.billing.paymentMethod.cardExample1")}
               </MDTypography>
               <MDBox ml="auto" lineHeight={0} color={darkMode ? "white" : "dark"}>
                 <Tooltip title="Edit Card" placement="top">
                   <Icon sx={{ cursor: "pointer" }} fontSize="small">
-                    edit
+                    {t("layouts.billing.paymentMethod.edit")}
                   </Icon>
                 </Tooltip>
               </MDBox>
@@ -87,12 +89,12 @@ function PaymentMethod() {
             >
               <MDBox component="img" src={visaLogo} alt="master card" width="10%" mr={2} />
               <MDTypography variant="h6" fontWeight="medium">
-                ****&nbsp;&nbsp;****&nbsp;&nbsp;****&nbsp;&nbsp;5248
+                {t("layouts.billing.paymentMethod.cardExample2")}
               </MDTypography>
               <MDBox ml="auto" lineHeight={0} color={darkMode ? "white" : "dark"}>
                 <Tooltip title="Edit Card" placement="top">
                   <Icon sx={{ cursor: "pointer" }} fontSize="small">
-                    edit
+                    {t("layouts.billing.paymentMethod.edit")}
                   </Icon>
                 </Tooltip>
               </MDBox>

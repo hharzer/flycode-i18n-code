@@ -39,6 +39,7 @@ import burceMars from "assets/images/bruce-mars.jpg";
 import backgroundImage from "assets/images/bg-profile.jpeg";
 
 function Header({ children }) {
+  const { t } = useTranslation();
   const [tabsOrientation, setTabsOrientation] = useState("horizontal");
   const [tabValue, setTabValue] = useState(0);
 
@@ -99,10 +100,10 @@ function Header({ children }) {
           <Grid item>
             <MDBox height="100%" mt={0.5} lineHeight={1}>
               <MDTypography variant="h5" fontWeight="medium">
-                Richard Davis
+                {t("layouts.profile.header.name")}
               </MDTypography>
               <MDTypography variant="button" color="text" fontWeight="regular">
-                CEO / Co-Founder
+                {t("layouts.profile.header.jobTitle")}
               </MDTypography>
             </MDBox>
           </Grid>
@@ -113,7 +114,7 @@ function Header({ children }) {
                   label="App"
                   icon={
                     <Icon fontSize="small" sx={{ mt: -0.25 }}>
-                      home
+                      {t("layouts.profile.header.home")}
                     </Icon>
                   }
                 />
@@ -121,7 +122,7 @@ function Header({ children }) {
                   label="Message"
                   icon={
                     <Icon fontSize="small" sx={{ mt: -0.25 }}>
-                      email
+                      {t("layouts.profile.header.email")}
                     </Icon>
                   }
                 />
@@ -129,7 +130,7 @@ function Header({ children }) {
                   label="Settings"
                   icon={
                     <Icon fontSize="small" sx={{ mt: -0.25 }}>
-                      settings
+                      {t("layouts.profile.header.settings")}
                     </Icon>
                   }
                 />

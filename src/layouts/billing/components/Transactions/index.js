@@ -25,29 +25,31 @@ import MDTypography from "components/MDTypography";
 
 // Billing page components
 import Transaction from "layouts/billing/components/Transaction";
+import { useTranslation } from "react-i18next";
 
 function Transactions() {
+  const { t } = useTranslation();
   return (
     <Card sx={{ height: "100%" }}>
       <MDBox display="flex" justifyContent="space-between" alignItems="center" pt={3} px={2}>
         <MDTypography variant="h6" fontWeight="medium" textTransform="capitalize">
-          Your Transaction&apos;s
+          {t("layouts.billing.transactions.yourTransactions")}
         </MDTypography>
         <MDBox display="flex" alignItems="flex-start">
           <MDBox color="text" mr={0.5} lineHeight={0}>
             <Icon color="inherit" fontSize="small">
-              date_range
+              {t("layouts.billing.transactions.dateRange")}
             </Icon>
           </MDBox>
           <MDTypography variant="button" color="text" fontWeight="regular">
-            23 - 30 March 2020
+            {t("layouts.billing.transactions.exampleDatesRange")}
           </MDTypography>
         </MDBox>
       </MDBox>
       <MDBox pt={3} pb={2} px={2}>
         <MDBox mb={2}>
           <MDTypography variant="caption" color="text" fontWeight="bold" textTransform="uppercase">
-            newest
+            {t("layouts.billing.transactions.newest")}
           </MDTypography>
         </MDBox>
         <MDBox
@@ -75,7 +77,7 @@ function Transactions() {
         </MDBox>
         <MDBox mt={1} mb={2}>
           <MDTypography variant="caption" color="text" fontWeight="bold" textTransform="uppercase">
-            yesterday
+            {t("layouts.billing.transactions.yesterday")}
           </MDTypography>
         </MDBox>
         <MDBox

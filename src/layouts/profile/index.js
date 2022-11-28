@@ -50,8 +50,10 @@ import team1 from "assets/images/team-1.jpg";
 import team2 from "assets/images/team-2.jpg";
 import team3 from "assets/images/team-3.jpg";
 import team4 from "assets/images/team-4.jpg";
+import { useTranslation } from "react-i18next";
 
 function Overview() {
+  const { t } = useTranslation();
   return (
     <DashboardLayout>
       <DashboardNavbar />
@@ -102,11 +104,11 @@ function Overview() {
         </MDBox>
         <MDBox pt={2} px={2} lineHeight={1.25}>
           <MDTypography variant="h6" fontWeight="medium">
-            Projects
+            {t("layouts.profile.projects")}
           </MDTypography>
           <MDBox mb={1}>
             <MDTypography variant="button" color="text">
-              Architects design houses
+              {t("layouts.profile.architects")}
             </MDTypography>
           </MDBox>
         </MDBox>

@@ -1,4 +1,5 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
+import initializeI18n from "../i18n";
 
 const DEFAULT_LANGUAGE = "en-US";
 
@@ -9,6 +10,10 @@ const LanguageContext = createContext({
 
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState(DEFAULT_LANGUAGE);
+
+  useEffect(() => {
+    initializeI18n(language);
+  }, []);
 
   return (
     <LanguageContext.Provider
@@ -24,4 +29,4 @@ export const LanguageProvider = ({ children }) => {
 
 export const LanguageConsumer = LanguageContext.Consumer;
 
-export const useLanguage = useContext(LanguageContext);
+export const useLanguage = () => useContext(LanguageContext);

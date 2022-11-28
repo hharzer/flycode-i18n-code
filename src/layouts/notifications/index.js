@@ -30,8 +30,10 @@ import MDSnackbar from "components/MDSnackbar";
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
+import { useTranslation } from "react-i18next";
 
 function Notifications() {
+  const { t } = useTranslation();
   const [successSB, setSuccessSB] = useState(false);
   const [infoSB, setInfoSB] = useState(false);
   const [warningSB, setWarningSB] = useState(false);
@@ -48,11 +50,11 @@ function Notifications() {
 
   const alertContent = (name) => (
     <MDTypography variant="body2" color="white">
-      A simple {name} alert with{" "}
+      {t("layouts.notifications.aSimple")} {name} {t("layouts.notifications.alertWith")}{" "}
       <MDTypography component="a" href="#" variant="body2" fontWeight="medium" color="white">
-        an example link
+        {t("layouts.notifications.exampleLink")}
       </MDTypography>
-      . Give it a click if you like.
+      {t("layouts.notifications.clickSuggestion")}
     </MDTypography>
   );
 
@@ -118,7 +120,7 @@ function Notifications() {
           <Grid item xs={12} lg={8}>
             <Card>
               <MDBox p={2}>
-                <MDTypography variant="h5">Alerts</MDTypography>
+                <MDTypography variant="h5">{t("layouts.notifications.alerts")}</MDTypography>
               </MDBox>
               <MDBox pt={2} px={2}>
                 <MDAlert color="primary" dismissible>
@@ -152,34 +154,34 @@ function Notifications() {
           <Grid item xs={12} lg={8}>
             <Card>
               <MDBox p={2} lineHeight={0}>
-                <MDTypography variant="h5">Notifications</MDTypography>
+                <MDTypography variant="h5">{t("layouts.notifications.notifications")}</MDTypography>
                 <MDTypography variant="button" color="text" fontWeight="regular">
-                  Notifications on this page use Toasts from Bootstrap. Read more details here.
+                  {t("layouts.notifications.notificationToastInfo")}
                 </MDTypography>
               </MDBox>
               <MDBox p={2}>
                 <Grid container spacing={3}>
                   <Grid item xs={12} sm={6} lg={3}>
                     <MDButton variant="gradient" color="success" onClick={openSuccessSB} fullWidth>
-                      success notification
+                      {t("layouts.notifications.successNotification")}
                     </MDButton>
                     {renderSuccessSB}
                   </Grid>
                   <Grid item xs={12} sm={6} lg={3}>
                     <MDButton variant="gradient" color="info" onClick={openInfoSB} fullWidth>
-                      info notification
+                      {t("layouts.notifications.infoNotification")}
                     </MDButton>
                     {renderInfoSB}
                   </Grid>
                   <Grid item xs={12} sm={6} lg={3}>
                     <MDButton variant="gradient" color="warning" onClick={openWarningSB} fullWidth>
-                      warning notification
+                      {t("layouts.notifications.warningNotification")}
                     </MDButton>
                     {renderWarningSB}
                   </Grid>
                   <Grid item xs={12} sm={6} lg={3}>
                     <MDButton variant="gradient" color="error" onClick={openErrorSB} fullWidth>
-                      error notification
+                      {t("layouts.notifications.errorNotification")}
                     </MDButton>
                     {renderErrorSB}
                   </Grid>

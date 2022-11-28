@@ -25,8 +25,10 @@ import MDBadge from "components/MDBadge";
 import team2 from "assets/images/team-2.jpg";
 import team3 from "assets/images/team-3.jpg";
 import team4 from "assets/images/team-4.jpg";
+import { useTranslation } from "react-i18next";
 
 export default function data() {
+  const { t } = useTranslation();
   const Author = ({ image, name, email }) => (
     <MDBox display="flex" alignItems="center" lineHeight={1}>
       <MDAvatar src={image} name={name} size="sm" />
@@ -68,12 +70,12 @@ export default function data() {
         ),
         employed: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            23/04/18
+            {t("layouts.tables.data.authorsTable.exampleDate1")}
           </MDTypography>
         ),
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
+            {t("layouts.tables.data.authorsTable.edit")}
           </MDTypography>
         ),
       },
@@ -87,12 +89,12 @@ export default function data() {
         ),
         employed: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            11/01/19
+            {t("layouts.tables.data.authorsTable.exampleDate2")}
           </MDTypography>
         ),
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
+            {t("layouts.tables.data.authorsTable.edit")}
           </MDTypography>
         ),
       },
@@ -106,12 +108,12 @@ export default function data() {
         ),
         employed: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            19/09/17
+            {t("layouts.tables.data.authorsTable.exampleDate3")}
           </MDTypography>
         ),
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
+            {t("layouts.tables.data.authorsTable.edit")}
           </MDTypography>
         ),
       },
@@ -125,12 +127,12 @@ export default function data() {
         ),
         employed: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            24/12/08
+            {t("layouts.tables.data.authorsTable.exampleDate4")}
           </MDTypography>
         ),
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
+            {t("layouts.tables.data.authorsTable.edit")}
           </MDTypography>
         ),
       },
@@ -144,12 +146,12 @@ export default function data() {
         ),
         employed: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            04/10/21
+            {t("layouts.tables.data.authorsTable.exampleDate5")}
           </MDTypography>
         ),
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
+            {t("layouts.tables.data.authorsTable.edit")}
           </MDTypography>
         ),
       },
@@ -163,12 +165,12 @@ export default function data() {
         ),
         employed: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            14/09/20
+            {t("layouts.tables.data.authorsTable.exampleDate6")}
           </MDTypography>
         ),
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
+            {t("layouts.tables.data.authorsTable.edit")}
           </MDTypography>
         ),
       },

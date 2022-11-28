@@ -27,8 +27,10 @@ import MDTypography from "components/MDTypography";
 // Images
 import pattern from "assets/images/illustrations/pattern-tree.svg";
 import masterCardLogo from "assets/images/logos/mastercard.png";
+import { useTranslation } from "react-i18next";
 
 function MasterCard({ color, number, holder, expires }) {
+  const { t } = useTranslation();
   const numbers = [...`${number}`];
 
   if (numbers.length < 16 || numbers.length > 16) {
@@ -66,7 +68,7 @@ function MasterCard({ color, number, holder, expires }) {
       />
       <MDBox position="relative" zIndex={2} p={2}>
         <MDBox color="white" p={1} lineHeight={0} display="inline-block">
-          <Icon fontSize="default">wifi</Icon>
+          <Icon fontSize="default">{t("examples.cards.masterCard.wifi")}</Icon>
         </MDBox>
         <MDTypography variant="h5" color="white" fontWeight="medium" sx={{ mt: 3, mb: 5, pb: 1 }}>
           {num1}&nbsp;&nbsp;&nbsp;{num2}&nbsp;&nbsp;&nbsp;{num3}&nbsp;&nbsp;&nbsp;{num4}
@@ -75,7 +77,7 @@ function MasterCard({ color, number, holder, expires }) {
           <MDBox display="flex" alignItems="center">
             <MDBox mr={3} lineHeight={1}>
               <MDTypography variant="button" color="white" fontWeight="regular" opacity={0.8}>
-                Card Holder
+                {t("examples.cards.masterCard.cardHolder")}
               </MDTypography>
               <MDTypography
                 variant="h6"
@@ -88,7 +90,7 @@ function MasterCard({ color, number, holder, expires }) {
             </MDBox>
             <MDBox lineHeight={1}>
               <MDTypography variant="button" color="white" fontWeight="regular" opacity={0.8}>
-                Expires
+                {t("examples.cards.masterCard.expires")}
               </MDTypography>
               <MDTypography variant="h6" color="white" fontWeight="medium">
                 {expires}

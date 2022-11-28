@@ -23,16 +23,18 @@ import MDButton from "components/MDButton";
 
 // Billing page components
 import Invoice from "layouts/billing/components/Invoice";
+import { useTranslation } from "react-i18next";
 
 function Invoices() {
+  const { t } = useTranslation();
   return (
     <Card sx={{ height: "100%" }}>
       <MDBox pt={2} px={2} display="flex" justifyContent="space-between" alignItems="center">
         <MDTypography variant="h6" fontWeight="medium">
-          Invoices
+          {t("layouts.billing.invoices.invoices")}
         </MDTypography>
         <MDButton variant="outlined" color="info" size="small">
-          view all
+          {t("layouts.billing.invoices.viewAll")}
         </MDButton>
       </MDBox>
       <MDBox p={2}>

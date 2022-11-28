@@ -22,8 +22,10 @@ import Icon from "@mui/material/Icon";
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
+import { useTranslation } from "react-i18next";
 
 function Invoice({ date, id, price, noGutter }) {
+  const { t } = useTranslation();
   return (
     <MDBox
       component="li"
@@ -47,9 +49,9 @@ function Invoice({ date, id, price, noGutter }) {
           {price}
         </MDTypography>
         <MDBox display="flex" alignItems="center" lineHeight={1} ml={3} sx={{ cursor: "pointer" }}>
-          <Icon fontSize="small">picture_as_pdf</Icon>
+          <Icon fontSize="small">{t("layouts.billing.invoice.pictureAsPdf")}</Icon>
           <MDTypography variant="button" fontWeight="bold">
-            &nbsp;PDF
+            &nbsp;{t("layouts.billing.invoice.pdf")}
           </MDTypography>
         </MDBox>
       </MDBox>

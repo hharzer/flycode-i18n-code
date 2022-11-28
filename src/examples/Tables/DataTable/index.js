@@ -38,6 +38,7 @@ import MDPagination from "components/MDPagination";
 // Material Dashboard 2 React example components
 import DataTableHeadCell from "examples/Tables/DataTable/DataTableHeadCell";
 import DataTableBodyCell from "examples/Tables/DataTable/DataTableBodyCell";
+import { useTranslation } from "react-i18next";
 
 function DataTable({
   entriesPerPage,
@@ -48,6 +49,7 @@ function DataTable({
   isSorted,
   noEndBorder,
 }) {
+  const { t } = useTranslation();
   const defaultValue = entriesPerPage.defaultValue ? entriesPerPage.defaultValue : 10;
   const entries = entriesPerPage.entries
     ? entriesPerPage.entries.map((el) => el.toString())
@@ -163,7 +165,7 @@ function DataTable({
                 renderInput={(params) => <MDInput {...params} />}
               />
               <MDTypography variant="caption" color="secondary">
-                &nbsp;&nbsp;entries per page
+                &nbsp;{t("examples.dataTable.entriesPerPage")}
               </MDTypography>
             </MDBox>
           )}
@@ -186,13 +188,14 @@ function DataTable({
       <Table {...getTableProps()}>
         <MDBox component="thead">
           {headerGroups.map((headerGroup) => (
-            <TableRow {...headerGroup.getHeaderGroupProps()}>
+            <TableRow {...headerGroup.getHeaderGroupProps()} key={headerGroup.id}>
               {headerGroup.headers.map((column) => (
                 <DataTableHeadCell
                   {...column.getHeaderProps(isSorted && column.getSortByToggleProps())}
                   width={column.width ? column.width : "auto"}
                   align={column.align ? column.align : "left"}
                   sorted={setSortedValue(column)}
+                  key={column.id}
                 >
                   {column.render("Header")}
                 </DataTableHeadCell>
@@ -204,12 +207,13 @@ function DataTable({
           {page.map((row, key) => {
             prepareRow(row);
             return (
-              <TableRow {...row.getRowProps()}>
-                {row.cells.map((cell) => (
+              <TableRow {...row.getRowProps()} key={key}>
+                {row.cells.map((cell, index) => (
                   <DataTableBodyCell
                     noBorder={noEndBorder && rows.length - 1 === key}
                     align={cell.column.align ? cell.column.align : "left"}
                     {...cell.getCellProps()}
+                    key={cell.index}
                   >
                     {cell.render("Cell")}
                   </DataTableBodyCell>
@@ -230,7 +234,9 @@ function DataTable({
         {showTotalEntries && (
           <MDBox mb={{ xs: 3, sm: 0 }}>
             <MDTypography variant="button" color="secondary" fontWeight="regular">
-              Showing {entriesStart} to {entriesEnd} of {rows.length} entries
+              {t("examples.dataTable.showing")} {entriesStart} {t("examples.dataTable.to")}{" "}
+              {entriesEnd} {t("examples.dataTable.of")} {rows.length}{" "}
+              {t("examples.dataTable.entries")}
             </MDTypography>
           </MDBox>
         )}
@@ -241,7 +247,7 @@ function DataTable({
           >
             {canPreviousPage && (
               <MDPagination item onClick={() => previousPage()}>
-                <Icon sx={{ fontWeight: "bold" }}>chevron_left</Icon>
+                <Icon sx={{ fontWeight: "bold" }}>{t("examples.dataTable.chevronLeft")}</Icon>
               </MDPagination>
             )}
             {renderPagination.length > 6 ? (
@@ -257,7 +263,7 @@ function DataTable({
             )}
             {canNextPage && (
               <MDPagination item onClick={() => nextPage()}>
-                <Icon sx={{ fontWeight: "bold" }}>chevron_right</Icon>
+                <Icon sx={{ fontWeight: "bold" }}>{t("examples.dataTable.chevronRight")}</Icon>
               </MDPagination>
             )}
           </MDPagination>

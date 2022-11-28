@@ -22,8 +22,10 @@ import Switch from "@mui/material/Switch";
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
+import { useTranslation } from "react-i18next";
 
 function PlatformSettings() {
+  const { t } = useTranslation();
   const [followsMe, setFollowsMe] = useState(true);
   const [answersPost, setAnswersPost] = useState(false);
   const [mentionsMe, setMentionsMe] = useState(true);
@@ -35,12 +37,12 @@ function PlatformSettings() {
     <Card sx={{ boxShadow: "none" }}>
       <MDBox p={2}>
         <MDTypography variant="h6" fontWeight="medium" textTransform="capitalize">
-          platform settings
+          {t("layouts.profile.platformSettings.platformSettings")}
         </MDTypography>
       </MDBox>
       <MDBox pt={1} pb={2} px={2} lineHeight={1.25}>
         <MDTypography variant="caption" fontWeight="bold" color="text" textTransform="uppercase">
-          account
+          {t("layouts.profile.platformSettings.account")}
         </MDTypography>
         <MDBox display="flex" alignItems="center" mb={0.5} ml={-1.5}>
           <MDBox mt={0.5}>
@@ -48,7 +50,7 @@ function PlatformSettings() {
           </MDBox>
           <MDBox width="80%" ml={0.5}>
             <MDTypography variant="button" fontWeight="regular" color="text">
-              Email me when someone follows me
+              {t("layouts.profile.platformSettings.emailWhenFollow")}
             </MDTypography>
           </MDBox>
         </MDBox>
@@ -58,7 +60,7 @@ function PlatformSettings() {
           </MDBox>
           <MDBox width="80%" ml={0.5}>
             <MDTypography variant="button" fontWeight="regular" color="text">
-              Email me when someone answers on my post
+              {t("layouts.profile.platformSettings.emailWhenAnswer")}
             </MDTypography>
           </MDBox>
         </MDBox>
@@ -68,13 +70,13 @@ function PlatformSettings() {
           </MDBox>
           <MDBox width="80%" ml={0.5}>
             <MDTypography variant="button" fontWeight="regular" color="text">
-              Email me when someone mentions me
+              {t("layouts.profile.platformSettings.emailWhenMention")}
             </MDTypography>
           </MDBox>
         </MDBox>
         <MDBox mt={3}>
           <MDTypography variant="caption" fontWeight="bold" color="text" textTransform="uppercase">
-            application
+            {t("layouts.profile.platformSettings.application")}
           </MDTypography>
         </MDBox>
         <MDBox display="flex" alignItems="center" mb={0.5} ml={-1.5}>
@@ -83,7 +85,7 @@ function PlatformSettings() {
           </MDBox>
           <MDBox width="80%" ml={0.5}>
             <MDTypography variant="button" fontWeight="regular" color="text">
-              New launches and projects
+              {t("layouts.profile.platformSettings.newLaunches")}
             </MDTypography>
           </MDBox>
         </MDBox>
@@ -93,7 +95,7 @@ function PlatformSettings() {
           </MDBox>
           <MDBox width="80%" ml={0.5}>
             <MDTypography variant="button" fontWeight="regular" color="text">
-              Monthly product updates
+              {t("layouts.profile.platformSettings.monthlyUpdates")}
             </MDTypography>
           </MDBox>
         </MDBox>
@@ -103,7 +105,7 @@ function PlatformSettings() {
           </MDBox>
           <MDBox width="80%" ml={0.5}>
             <MDTypography variant="button" fontWeight="regular" color="text">
-              Subscribe to newsletter
+              {t("layouts.profile.platformSettings.subscribe")}
             </MDTypography>
           </MDBox>
         </MDBox>

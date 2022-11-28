@@ -31,8 +31,10 @@ import logoAtlassian from "assets/images/small-logos/logo-atlassian.svg";
 import logoSlack from "assets/images/small-logos/logo-slack.svg";
 import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
 import logoInvesion from "assets/images/small-logos/logo-invision.svg";
+import { useTranslation } from "react-i18next";
 
 export default function data() {
+  const { t } = useTranslation();
   const Project = ({ image, name }) => (
     <MDBox display="flex" alignItems="center" lineHeight={1}>
       <MDAvatar src={image} name={name} size="sm" variant="rounded" />
@@ -67,18 +69,18 @@ export default function data() {
         project: <Project image={LogoAsana} name="Asana" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
-            $2,500
+            {t("layouts.tables.data.projectsTable.2c500k")}
           </MDTypography>
         ),
         status: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            working
+            {t("layouts.tables.data.projectsTable.working")}
           </MDTypography>
         ),
         completion: <Progress color="info" value={60} />,
         action: (
           <MDTypography component="a" href="#" color="text">
-            <Icon>more_vert</Icon>
+            <Icon>{t("layouts.tables.data.projectsTable.moreVert")}</Icon>
           </MDTypography>
         ),
       },
@@ -86,18 +88,18 @@ export default function data() {
         project: <Project image={logoGithub} name="Github" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
-            $5,000
+            {t("layouts.tables.data.projectsTable.5k")}
           </MDTypography>
         ),
         status: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            done
+            {t("layouts.tables.data.projectsTable.done")}
           </MDTypography>
         ),
         completion: <Progress color="success" value={100} />,
         action: (
           <MDTypography component="a" href="#" color="text">
-            <Icon>more_vert</Icon>
+            <Icon>{t("layouts.tables.data.projectsTable.moreVert")}</Icon>
           </MDTypography>
         ),
       },
@@ -105,18 +107,18 @@ export default function data() {
         project: <Project image={logoAtlassian} name="Atlassian" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
-            $3,400
+            {t("layouts.tables.data.projectsTable.3k")}
           </MDTypography>
         ),
         status: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            canceled
+            {t("layouts.tables.data.projectsTable.cancelled")}
           </MDTypography>
         ),
         completion: <Progress color="error" value={30} />,
         action: (
           <MDTypography component="a" href="#" color="text">
-            <Icon>more_vert</Icon>
+            <Icon>{t("layouts.tables.data.projectsTable.moreVert")}</Icon>
           </MDTypography>
         ),
       },
@@ -124,18 +126,18 @@ export default function data() {
         project: <Project image={logoSpotify} name="Spotify" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
-            $14,000
+            {t("layouts.tables.data.projectsTable.14k")}
           </MDTypography>
         ),
         status: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            working
+            {t("layouts.tables.data.projectsTable.working")}
           </MDTypography>
         ),
         completion: <Progress color="info" value={80} />,
         action: (
           <MDTypography component="a" href="#" color="text">
-            <Icon>more_vert</Icon>
+            <Icon>{t("layouts.tables.data.projectsTable.moreVert")}</Icon>
           </MDTypography>
         ),
       },
@@ -143,18 +145,18 @@ export default function data() {
         project: <Project image={logoSlack} name="Slack" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
-            $1,000
+            {t("layouts.tables.data.projectsTable.1k")}
           </MDTypography>
         ),
         status: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            canceled
+            {t("layouts.tables.data.projectsTable.cancelled")}
           </MDTypography>
         ),
         completion: <Progress color="error" value={0} />,
         action: (
           <MDTypography component="a" href="#" color="text">
-            <Icon>more_vert</Icon>
+            <Icon>{t("layouts.tables.data.projectsTable.moreVert")}</Icon>
           </MDTypography>
         ),
       },
@@ -162,18 +164,18 @@ export default function data() {
         project: <Project image={logoInvesion} name="Invesion" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
-            $2,300
+            {t("layouts.tables.data.projectsTable.2c300k")}
           </MDTypography>
         ),
         status: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            done
+            {t("layouts.tables.data.projectsTable.done")}
           </MDTypography>
         ),
         completion: <Progress color="success" value={100} />,
         action: (
           <MDTypography component="a" href="#" color="text">
-            <Icon>more_vert</Icon>
+            <Icon>{t("layouts.tables.data.projectsTable.moreVert")}</Icon>
           </MDTypography>
         ),
       },

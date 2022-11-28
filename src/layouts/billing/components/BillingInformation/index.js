@@ -22,13 +22,15 @@ import MDTypography from "components/MDTypography";
 
 // Billing page components
 import Bill from "layouts/billing/components/Bill";
+import { useTranslation } from "react-i18next";
 
 function BillingInformation() {
+  const { t } = useTranslation();
   return (
     <Card id="delete-account">
       <MDBox pt={3} px={2}>
         <MDTypography variant="h6" fontWeight="medium">
-          Billing Information
+          {t("layouts.billing.billingInformation.billingInformation")}
         </MDTypography>
       </MDBox>
       <MDBox pt={1} pb={2} px={2}>

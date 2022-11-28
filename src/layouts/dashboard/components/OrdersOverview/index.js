@@ -23,24 +23,28 @@ import MDTypography from "components/MDTypography";
 
 // Material Dashboard 2 React example components
 import TimelineItem from "examples/Timeline/TimelineItem";
+import { useTranslation } from "react-i18next";
 
 function OrdersOverview() {
+  const { t } = useTranslation();
   return (
     <Card sx={{ height: "100%" }}>
       <MDBox pt={3} px={3}>
         <MDTypography variant="h6" fontWeight="medium">
-          Orders overview
+          {t("layouts.dashboard.ordersOverview.ordersOverview")}
         </MDTypography>
         <MDBox mt={0} mb={2}>
           <MDTypography variant="button" color="text" fontWeight="regular">
             <MDTypography display="inline" variant="body2" verticalAlign="middle">
-              <Icon sx={{ color: ({ palette: { success } }) => success.main }}>arrow_upward</Icon>
+              <Icon sx={{ color: ({ palette: { success } }) => success.main }}>
+                {t("layouts.dashboard.ordersOverview.arrowUpward")}
+              </Icon>
             </MDTypography>
             &nbsp;
             <MDTypography variant="button" color="text" fontWeight="medium">
-              24%
+              {t("layouts.dashboard.ordersOverview.percentage")}
             </MDTypography>{" "}
-            this month
+            {t("layouts.dashboard.ordersOverview.thisMonth")}
           </MDTypography>
         </MDBox>
       </MDBox>

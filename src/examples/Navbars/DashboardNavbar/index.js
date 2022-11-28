@@ -52,8 +52,10 @@ import {
   setMiniSidenav,
   setOpenConfigurator,
 } from "context";
+import { useTranslation } from "react-i18next";
 
 function DashboardNavbar({ absolute, light, isMini }) {
+  const { t } = useTranslation();
   const [navbarType, setNavbarType] = useState();
   const [controller, dispatch] = useMaterialUIController();
   const { miniSidenav, transparentNavbar, fixedNavbar, openConfigurator, darkMode } = controller;
@@ -104,9 +106,18 @@ function DashboardNavbar({ absolute, light, isMini }) {
       onClose={handleCloseMenu}
       sx={{ mt: 2 }}
     >
-      <NotificationItem icon={<Icon>email</Icon>} title="Check new messages" />
-      <NotificationItem icon={<Icon>podcasts</Icon>} title="Manage Podcast sessions" />
-      <NotificationItem icon={<Icon>shopping_cart</Icon>} title="Payment successfully completed" />
+      <NotificationItem
+        icon={<Icon>{t("examples.dashboardNavbar.email")}</Icon>}
+        title="Check new messages"
+      />
+      <NotificationItem
+        icon={<Icon>{t("examples.dashboardNavbar.podcasts")}</Icon>}
+        title="Manage Podcast sessions"
+      />
+      <NotificationItem
+        icon={<Icon>{t("examples.dashboardNavbar.shoppingCart")}</Icon>}
+        title="Payment successfully completed"
+      />
     </Menu>
   );
 
@@ -141,7 +152,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
             <MDBox color={light ? "white" : "inherit"}>
               <Link to="/authentication/sign-in/basic">
                 <IconButton sx={navbarIconButton} size="small" disableRipple>
-                  <Icon sx={iconsStyle}>account_circle</Icon>
+                  <Icon sx={iconsStyle}>{t("examples.dashboardNavbar.accountCircle")}</Icon>
                 </IconButton>
               </Link>
               <IconButton
@@ -162,7 +173,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
                 sx={navbarIconButton}
                 onClick={handleConfiguratorOpen}
               >
-                <Icon sx={iconsStyle}>settings</Icon>
+                <Icon sx={iconsStyle}>{t("examples.dashboardNavbar.settings")}</Icon>
               </IconButton>
               <IconButton
                 size="small"
@@ -174,7 +185,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
                 variant="contained"
                 onClick={handleOpenMenu}
               >
-                <Icon sx={iconsStyle}>notifications</Icon>
+                <Icon sx={iconsStyle}>{t("examples.dashboardNavbar.notifications")}</Icon>
               </IconButton>
               {renderMenu()}
             </MDBox>

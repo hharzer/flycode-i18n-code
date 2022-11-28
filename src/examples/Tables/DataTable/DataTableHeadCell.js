@@ -24,8 +24,10 @@ import MDBox from "components/MDBox";
 
 // Material Dashboard 2 React contexts
 import { useMaterialUIController } from "context";
+import { useTranslation } from "react-i18next";
 
 function DataTableHeadCell({ width, children, sorted, align, ...rest }) {
+  const { t } = useTranslation();
   const [controller] = useMaterialUIController();
   const { darkMode } = controller;
 
@@ -70,7 +72,7 @@ function DataTableHeadCell({ width, children, sorted, align, ...rest }) {
               color={sorted === "asce" ? "text" : "secondary"}
               opacity={sorted === "asce" ? 1 : 0.5}
             >
-              <Icon>arrow_drop_up</Icon>
+              <Icon>{t("examples.dataTable.headCell.arrowDropUp")}</Icon>
             </MDBox>
             <MDBox
               position="absolute"
@@ -78,7 +80,7 @@ function DataTableHeadCell({ width, children, sorted, align, ...rest }) {
               color={sorted === "desc" ? "text" : "secondary"}
               opacity={sorted === "desc" ? 1 : 0.5}
             >
-              <Icon>arrow_drop_down</Icon>
+              <Icon>{t("examples.dataTable.headCell.arrowDropDown")}</Icon>
             </MDBox>
           </MDBox>
         )}

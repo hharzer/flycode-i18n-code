@@ -26,8 +26,10 @@ import MDButton from "components/MDButton";
 
 // Material Dashboard 2 React context
 import { useMaterialUIController } from "context";
+import { useTranslation } from "react-i18next";
 
 function Bill({ name, company, email, vat, noGutter }) {
+  const { t } = useTranslation();
   const [controller] = useMaterialUIController();
   const { darkMode } = controller;
 
@@ -58,17 +60,18 @@ function Bill({ name, company, email, vat, noGutter }) {
           <MDBox display="flex" alignItems="center" mt={{ xs: 2, sm: 0 }} ml={{ xs: -1.5, sm: 0 }}>
             <MDBox mr={1}>
               <MDButton variant="text" color="error">
-                <Icon>delete</Icon>&nbsp;delete
+                <Icon>{t("layouts.billing.bill.delete")}</Icon>&nbsp;
+                {t("layouts.billing.bill.delete")}
               </MDButton>
             </MDBox>
             <MDButton variant="text" color={darkMode ? "white" : "dark"}>
-              <Icon>edit</Icon>&nbsp;edit
+              <Icon>{t("layouts.billing.bill.edit")}</Icon>&nbsp;{t("layouts.billing.bill.edit")}
             </MDButton>
           </MDBox>
         </MDBox>
         <MDBox mb={1} lineHeight={0}>
           <MDTypography variant="caption" color="text">
-            Company Name:&nbsp;&nbsp;&nbsp;
+            {t("layouts.billing.bill.companyName")}&nbsp;
             <MDTypography variant="caption" fontWeight="medium" textTransform="capitalize">
               {company}
             </MDTypography>
@@ -76,14 +79,14 @@ function Bill({ name, company, email, vat, noGutter }) {
         </MDBox>
         <MDBox mb={1} lineHeight={0}>
           <MDTypography variant="caption" color="text">
-            Email Address:&nbsp;&nbsp;&nbsp;
+            {t("layouts.billing.bill.emailAddress")}&nbsp;
             <MDTypography variant="caption" fontWeight="medium">
               {email}
             </MDTypography>
           </MDTypography>
         </MDBox>
         <MDTypography variant="caption" color="text">
-          VAT Number:&nbsp;&nbsp;&nbsp;
+          {t("layouts.billing.bill.vatNumber")}&nbsp;
           <MDTypography variant="caption" fontWeight="medium">
             {vat}
           </MDTypography>

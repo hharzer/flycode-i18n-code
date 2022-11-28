@@ -30,8 +30,10 @@ import DataTable from "examples/Tables/DataTable";
 
 // Data
 import data from "layouts/dashboard/components/Projects/data";
+import { useTranslation } from "react-i18next";
 
 function Projects() {
+  const { t } = useTranslation();
   const { columns, rows } = data();
   const [menu, setMenu] = useState(null);
 
@@ -53,9 +55,9 @@ function Projects() {
       open={Boolean(menu)}
       onClose={closeMenu}
     >
-      <MenuItem onClick={closeMenu}>Action</MenuItem>
-      <MenuItem onClick={closeMenu}>Another action</MenuItem>
-      <MenuItem onClick={closeMenu}>Something else</MenuItem>
+      <MenuItem onClick={closeMenu}>{t("layouts.dashboard.projects.action")}</MenuItem>
+      <MenuItem onClick={closeMenu}>{t("layouts.dashboard.projects.anotherAction")}</MenuItem>
+      <MenuItem onClick={closeMenu}>{t("layouts.dashboard.projects.somethingElse")}</MenuItem>
     </Menu>
   );
 
@@ -64,7 +66,7 @@ function Projects() {
       <MDBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
         <MDBox>
           <MDTypography variant="h6" gutterBottom>
-            Projects
+            {t("layouts.dashboard.projects.projects")}
           </MDTypography>
           <MDBox display="flex" alignItems="center" lineHeight={0}>
             <Icon
@@ -74,16 +76,17 @@ function Projects() {
                 mt: -0.5,
               }}
             >
-              done
+              {t("layouts.dashboard.projects.done")}
             </Icon>
             <MDTypography variant="button" fontWeight="regular" color="text">
-              &nbsp;<strong>30 done</strong> this month
+              &nbsp;<strong>{t("layouts.dashboard.projects.30Done")}</strong>{" "}
+              {t("layouts.dashboard.projects.thisMonth")}
             </MDTypography>
           </MDBox>
         </MDBox>
         <MDBox color="text" px={2}>
           <Icon sx={{ cursor: "pointer", fontWeight: "bold" }} fontSize="small" onClick={openMenu}>
-            more_vert
+            {t("layouts.dashboard.projects.moreVert")}
           </Icon>
         </MDBox>
         {renderMenu}

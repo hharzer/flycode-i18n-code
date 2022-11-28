@@ -32,8 +32,10 @@ import MDTypography from "components/MDTypography";
 // Material Dashboard 2 React base styles
 import colors from "assets/theme/base/colors";
 import typography from "assets/theme/base/typography";
+import { useTranslation } from "react-i18next";
 
 function ProfileInfoCard({ title, description, info, social, action, shadow }) {
+  const { t } = useTranslation();
   const labels = [];
   const values = [];
   const { socialMediaColors } = colors;
@@ -92,7 +94,7 @@ function ProfileInfoCard({ title, description, info, social, action, shadow }) {
         </MDTypography>
         <MDTypography component={Link} to={action.route} variant="body2" color="secondary">
           <Tooltip title={action.tooltip} placement="top">
-            <Icon>edit</Icon>
+            <Icon>{t("examples.cards.infoCards.edit")}</Icon>
           </Tooltip>
         </MDTypography>
       </MDBox>
@@ -109,7 +111,7 @@ function ProfileInfoCard({ title, description, info, social, action, shadow }) {
           {renderItems}
           <MDBox display="flex" py={1} pr={2}>
             <MDTypography variant="button" fontWeight="bold" textTransform="capitalize">
-              social: &nbsp;
+              {t("examples.cards.infoCards.social")} &nbsp;
             </MDTypography>
             {renderSocial}
           </MDBox>

@@ -34,8 +34,10 @@ import reportsLineChartData from "layouts/dashboard/data/reportsLineChartData";
 // Dashboard components
 import Projects from "layouts/dashboard/components/Projects";
 import OrdersOverview from "layouts/dashboard/components/OrdersOverview";
+import { useTranslation } from "react-i18next";
 
 function Dashboard() {
+  const { t } = useTranslation();
   const { sales, tasks } = reportsLineChartData;
 
   return (
@@ -123,7 +125,8 @@ function Dashboard() {
                   title="daily sales"
                   description={
                     <>
-                      (<strong>+15%</strong>) increase in today sales.
+                      (<strong>{t("layouts.dashboard.plusPercentage")}</strong>){" "}
+                      {t("layouts.dashboard.increaseTodaySales")}
                     </>
                   }
                   date="updated 4 min ago"

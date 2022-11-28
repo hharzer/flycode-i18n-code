@@ -100,7 +100,7 @@
         "signInCap": "Sign In",
         "joinUs": "Join us today",
         "enterCredentials": "Enter your email and password to register",
-        "iAgree": " I agree the ",
+        "iAgree": " I agree to the ",
         "termsAndConditions": "Terms and Conditions",
         "alreadyHaveAccount": "Already have an account?"
       }
@@ -108,19 +108,17 @@
     "billing": {
       "bill": {
         "delete": "delete",
-        "spaceDelete": " delete",
         "edit": "edit",
-        "spaceEdit": " edit",
-        "companyName": "Company Name: ",
-        "emailAddress": "Email Address: ",
-        "vatNumber": "VAT Number: "
+        "companyName": "Company Name:",
+        "emailAddress": "Email Address:",
+        "vatNumber": "VAT Number:"
       },
       "billingInformation": {
         "billingInformation": "Billing Information"
       },
       "invoice": {
         "pictureAsPdf": "picture_as_pdf",
-        "pdf": " PDF"
+        "pdf": "PDF"
       },
       "invoices": {
         "invoices": "Invoices",
@@ -154,7 +152,7 @@
           "3k": "$3,000",
           "notSet": "Not set",
           "20k": "$20,500",
-          "5k": "$500",
+          "5h": "$500",
           "2k": "$2,000",
           "14k": "$14,000"
         },
@@ -168,7 +166,7 @@
         "moreVert": "more_vert"
       },
       "plusPercentage": "+15%",
-      "increaseTodaySales": ") increase in today sales."
+      "increaseTodaySales": "increase in today sales."
     },
     "notifications": {
       "alerts": "Alerts",

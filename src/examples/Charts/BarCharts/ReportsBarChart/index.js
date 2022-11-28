@@ -32,8 +32,10 @@ import MDTypography from "components/MDTypography";
 
 // ReportsBarChart configurations
 import configs from "examples/Charts/BarCharts/ReportsBarChart/configs";
+import { useTranslation } from "react-i18next";
 
 function ReportsBarChart({ color, title, description, date, chart }) {
+  const { t } = useTranslation();
   const { data, options } = configs(chart.labels || [], chart.datasets || {});
 
   return (
@@ -66,7 +68,7 @@ function ReportsBarChart({ color, title, description, date, chart }) {
           <Divider />
           <MDBox display="flex" alignItems="center">
             <MDTypography variant="button" color="text" lineHeight={1} sx={{ mt: 0.15, mr: 0.5 }}>
-              <Icon>schedule</Icon>
+              <Icon>{t("examples.charts.schedule")}</Icon>
             </MDTypography>
             <MDTypography variant="button" color="text" fontWeight="light">
               {date}

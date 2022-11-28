@@ -33,8 +33,10 @@ import team1 from "assets/images/team-1.jpg";
 import team2 from "assets/images/team-2.jpg";
 import team3 from "assets/images/team-3.jpg";
 import team4 from "assets/images/team-4.jpg";
+import { useTranslation } from "react-i18next";
 
 export default function data() {
+  const { t } = useTranslation();
   const avatars = (members) =>
     members.map(([image, name]) => (
       <Tooltip key={name} title={name} placeholder="bottom">
@@ -92,7 +94,7 @@ export default function data() {
         ),
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
-            $14,000
+            {t("layouts.dashboard.projects.data.14k")}
           </MDTypography>
         ),
         completion: (
@@ -113,7 +115,7 @@ export default function data() {
         ),
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
-            $3,000
+            {t("layouts.dashboard.projects.data.3k")}
           </MDTypography>
         ),
         completion: (
@@ -134,7 +136,7 @@ export default function data() {
         ),
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
-            Not set
+            {t("layouts.dashboard.projects.data.notSet")}
           </MDTypography>
         ),
         completion: (
@@ -157,7 +159,7 @@ export default function data() {
         ),
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
-            $20,500
+            {t("layouts.dashboard.projects.data.20k")}
           </MDTypography>
         ),
         completion: (
@@ -175,7 +177,7 @@ export default function data() {
         ),
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
-            $500
+            {t("layouts.dashboard.projects.data.5h")}
           </MDTypography>
         ),
         completion: (
@@ -196,7 +198,7 @@ export default function data() {
         ),
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
-            $2,000
+            {t("layouts.dashboard.projects.data.2k")}
           </MDTypography>
         ),
         completion: (

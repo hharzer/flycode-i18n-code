@@ -31,8 +31,10 @@ import CoverLayout from "layouts/authentication/components/CoverLayout";
 
 // Images
 import bgImage from "assets/images/bg-sign-up-cover.jpeg";
+import { useTranslation } from "react-i18next";
 
 function Cover() {
+  const { t } = useTranslation();
   return (
     <CoverLayout image={bgImage}>
       <Card>
@@ -48,10 +50,10 @@ function Cover() {
           textAlign="center"
         >
           <MDTypography variant="h4" fontWeight="medium" color="white" mt={1}>
-            Join us today
+            {t("layouts.authentication.signIn.joinUs")}
           </MDTypography>
           <MDTypography display="block" variant="button" color="white" my={1}>
-            Enter your email and password to register
+            {t("layouts.authentication.signIn.enterCredentials")}
           </MDTypography>
         </MDBox>
         <MDBox pt={4} pb={3} px={3}>
@@ -73,7 +75,7 @@ function Cover() {
                 color="text"
                 sx={{ cursor: "pointer", userSelect: "none", ml: -1 }}
               >
-                &nbsp;&nbsp;I agree the&nbsp;
+                &nbsp;{t("layouts.authentication.signIn.iAgree")}
               </MDTypography>
               <MDTypography
                 component="a"
@@ -83,17 +85,17 @@ function Cover() {
                 color="info"
                 textGradient
               >
-                Terms and Conditions
+                {t("layouts.authentication.signIn.termsAndConditions")}
               </MDTypography>
             </MDBox>
             <MDBox mt={4} mb={1}>
               <MDButton variant="gradient" color="info" fullWidth>
-                sign in
+                {t("layouts.authentication.signIn.signInUncap")}
               </MDButton>
             </MDBox>
             <MDBox mt={3} mb={1} textAlign="center">
               <MDTypography variant="button" color="text">
-                Already have an account?{" "}
+                {t("layouts.authentication.signIn.alreadyHaveAccount")}{" "}
                 <MDTypography
                   component={Link}
                   to="/authentication/sign-in"
@@ -102,7 +104,7 @@ function Cover() {
                   fontWeight="medium"
                   textGradient
                 >
-                  Sign In
+                  {t("layouts.authentication.signIn.signInCap")}
                 </MDTypography>
               </MDTypography>
             </MDBox>

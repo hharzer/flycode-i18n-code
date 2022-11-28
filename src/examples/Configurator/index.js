@@ -47,8 +47,10 @@ import {
   setSidenavColor,
   setDarkMode,
 } from "context";
+import { useTranslation } from "react-i18next";
 
 function Configurator() {
+  const { t } = useTranslation();
   const [controller, dispatch] = useMaterialUIController();
   const {
     openConfigurator,
@@ -138,9 +140,9 @@ function Configurator() {
         px={3}
       >
         <MDBox>
-          <MDTypography variant="h5">Material UI Configurator</MDTypography>
+          <MDTypography variant="h5">{t("examples.configurator.muiConfigurator")}</MDTypography>
           <MDTypography variant="body2" color="text">
-            See our dashboard options.
+            {t("examples.configurator.seeDashboardOptions")}
           </MDTypography>
         </MDBox>
 
@@ -155,7 +157,7 @@ function Configurator() {
           })}
           onClick={handleCloseConfigurator}
         >
-          close
+          {t("examples.configurator.close")}
         </Icon>
       </MDBox>
 
@@ -163,7 +165,7 @@ function Configurator() {
 
       <MDBox pt={0.5} pb={3} px={3}>
         <MDBox>
-          <MDTypography variant="h6">Sidenav Colors</MDTypography>
+          <MDTypography variant="h6">{t("examples.configurator.sidenavColors")}</MDTypography>
 
           <MDBox mb={0.5}>
             {sidenavColors.map((color) => (
@@ -209,9 +211,9 @@ function Configurator() {
         </MDBox>
 
         <MDBox mt={3} lineHeight={1}>
-          <MDTypography variant="h6">Sidenav Type</MDTypography>
+          <MDTypography variant="h6">{t("examples.configurator.sidenavType")}</MDTypography>
           <MDTypography variant="button" color="text">
-            Choose between different sidenav types.
+            {t("examples.configurator.chooseSidenavTypes")}
           </MDTypography>
 
           <MDBox
@@ -233,7 +235,7 @@ function Configurator() {
                   : sidenavTypeButtonsStyles
               }
             >
-              Dark
+              {t("examples.configurator.dark")}
             </MDButton>
             <MDBox sx={{ mx: 1, width: "8rem", minWidth: "8rem" }}>
               <MDButton
@@ -248,7 +250,7 @@ function Configurator() {
                     : sidenavTypeButtonsStyles
                 }
               >
-                Transparent
+                {t("examples.configurator.transparent")}
               </MDButton>
             </MDBox>
             <MDButton
@@ -263,7 +265,7 @@ function Configurator() {
                   : sidenavTypeButtonsStyles
               }
             >
-              White
+              {t("examples.configurator.white")}
             </MDButton>
           </MDBox>
         </MDBox>
@@ -274,13 +276,13 @@ function Configurator() {
           mt={3}
           lineHeight={1}
         >
-          <MDTypography variant="h6">Navbar Fixed</MDTypography>
+          <MDTypography variant="h6">{t("examples.configurator.navbarFixed")}</MDTypography>
 
           <Switch checked={fixedNavbar} onChange={handleFixedNavbar} />
         </MDBox>
         <Divider />
         <MDBox display="flex" justifyContent="space-between" alignItems="center" lineHeight={1}>
-          <MDTypography variant="h6">Light / Dark</MDTypography>
+          <MDTypography variant="h6">{t("examples.configurator.lightOrDark")}</MDTypography>
 
           <Switch checked={darkMode} onChange={handleDarkMode} />
         </MDBox>
@@ -295,7 +297,7 @@ function Configurator() {
             variant="outlined"
             fullWidth
           >
-            view documentation
+            {t("examples.configurator.viewDocs")}
           </MDButton>
         </MDBox>
         <MDBox display="flex" justifyContent="center">
@@ -306,12 +308,12 @@ function Configurator() {
             data-show-count="true"
             aria-label="Star creativetimofficial/material-dashboard-react on GitHub"
           >
-            Star
+            {t("examples.configurator.star")}
           </GitHubButton>
         </MDBox>
         <MDBox mt={2} textAlign="center">
           <MDBox mb={0.5}>
-            <MDTypography variant="h6">Thank you for sharing!</MDTypography>
+            <MDTypography variant="h6">{t("examples.configurator.thanksForSharing")}</MDTypography>
           </MDBox>
 
           <MDBox display="flex" justifyContent="center">
@@ -324,7 +326,7 @@ function Configurator() {
                 color="dark"
               >
                 <TwitterIcon />
-                &nbsp; Tweet
+                &nbsp;{t("examples.configurator.tweet")}
               </MDButton>
             </MDBox>
             <MDButton
@@ -335,7 +337,7 @@ function Configurator() {
               color="dark"
             >
               <FacebookIcon />
-              &nbsp; Share
+              &nbsp;{t("examples.configurator.share")}
             </MDButton>
           </MDBox>
         </MDBox>

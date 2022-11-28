@@ -27,8 +27,10 @@ import CoverLayout from "layouts/authentication/components/CoverLayout";
 
 // Images
 import bgImage from "assets/images/bg-reset-cover.jpeg";
+import { useTranslation } from "react-i18next";
 
 function Cover() {
+  const { t } = useTranslation();
   return (
     <CoverLayout coverHeight="50vh" image={bgImage}>
       <Card>
@@ -44,10 +46,10 @@ function Cover() {
           textAlign="center"
         >
           <MDTypography variant="h3" fontWeight="medium" color="white" mt={1}>
-            Reset Password
+            {t("layouts.authentication.resetPassword.resetPassword")}
           </MDTypography>
           <MDTypography display="block" variant="button" color="white" my={1}>
-            You will receive an e-mail in maximum 60 seconds
+            {t("layouts.authentication.resetPassword.willRecieveEmail")}
           </MDTypography>
         </MDBox>
         <MDBox pt={4} pb={3} px={3}>
@@ -57,7 +59,7 @@ function Cover() {
             </MDBox>
             <MDBox mt={6} mb={1}>
               <MDButton variant="gradient" color="info" fullWidth>
-                reset
+                {t("layouts.authentication.resetPassword.reset")}
               </MDButton>
             </MDBox>
           </MDBox>

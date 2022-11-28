@@ -13,7 +13,7 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 // react-router components
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
@@ -45,12 +45,12 @@ import { useMaterialUIController, setMiniSidenav, setOpenConfigurator } from "co
 // Images
 import brandWhite from "assets/images/logo-ct.png";
 import brandDark from "assets/images/logo-ct-dark.png";
-import initializeI18n from "i18n";
 import { useLanguage } from "context/language-context";
-
-const DEFAULT_LANGUAGE = "en-US";
+import { useTranslation } from "react-i18next";
+import initializeI18n from "./i18n";
 
 export default function App() {
+  // const { t } = useTranslation();
   const [controller, dispatch] = useMaterialUIController();
   const {
     miniSidenav,
@@ -66,24 +66,43 @@ export default function App() {
   const { pathname } = useLocation();
   const { language } = useLanguage();
 
+  const getRoutes = useCallback(
+    (allRoutes) =>
+      allRoutes.map((route) => {
+        if (route.collapse) {
+          return getRoutes(route.collapse);
+        }
+
+        if (route.route) {
+          return <Route exact path={route.route} element={route.component} key={route.key} />;
+        }
+
+        return null;
+      }),
+    []
+  );
+
   // Open sidenav when mouse enter on mini sidenav
-  const handleOnMouseEnter = () => {
+  const handleOnMouseEnter = useCallback(() => {
     if (miniSidenav && !onMouseEnter) {
       setMiniSidenav(dispatch, false);
       setOnMouseEnter(true);
     }
-  };
+  }, []);
 
   // Close sidenav when mouse leave mini sidenav
-  const handleOnMouseLeave = () => {
+  const handleOnMouseLeave = useCallback(() => {
     if (onMouseEnter) {
       setMiniSidenav(dispatch, true);
       setOnMouseEnter(false);
     }
-  };
+  }, []);
 
   // Change the openConfigurator state
-  const handleConfiguratorOpen = () => setOpenConfigurator(dispatch, !openConfigurator);
+  const handleConfiguratorOpen = useCallback(
+    () => setOpenConfigurator(dispatch, !openConfigurator),
+    []
+  );
 
   // Setting the dir attribute for the body element
   useEffect(() => {
@@ -95,23 +114,6 @@ export default function App() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
   }, [pathname]);
-
-  const getRoutes = (allRoutes) =>
-    allRoutes.map((route) => {
-      if (route.collapse) {
-        return getRoutes(route.collapse);
-      }
-
-      if (route.route) {
-        return <Route exact path={route.route} element={route.component} key={route.key} />;
-      }
-
-      return null;
-    });
-
-  useEffect(() => {
-    initializeI18n(language);
-  }, []);
 
   const configsButton = (
     <MDBox
@@ -132,7 +134,7 @@ export default function App() {
       onClick={handleConfiguratorOpen}
     >
       <Icon fontSize="small" color="inherit">
-        settings
+        {/* {t("appSettings")} */}settings
       </Icon>
     </MDBox>
   );

@@ -30,8 +30,10 @@ import DataTable from "examples/Tables/DataTable";
 // Data
 import authorsTableData from "layouts/tables/data/authorsTableData";
 import projectsTableData from "layouts/tables/data/projectsTableData";
+import { useTranslation } from "react-i18next";
 
 function Tables() {
+  const { t } = useTranslation();
   const { columns, rows } = authorsTableData();
   const { columns: pColumns, rows: pRows } = projectsTableData();
 
@@ -53,7 +55,7 @@ function Tables() {
                 coloredShadow="info"
               >
                 <MDTypography variant="h6" color="white">
-                  Authors Table
+                  {t("layouts.tables.authorsTableTitle")}
                 </MDTypography>
               </MDBox>
               <MDBox pt={3}>
@@ -80,7 +82,7 @@ function Tables() {
                 coloredShadow="info"
               >
                 <MDTypography variant="h6" color="white">
-                  Projects Table
+                  {t("layouts.tables.projectsTableTitle")}
                 </MDTypography>
               </MDBox>
               <MDBox pt={3}>
