@@ -50,12 +50,12 @@ function Dashboard() {
               <ComplexStatisticsCard
                 color="dark"
                 icon="weekend"
-                title="Bookings"
+                title={t("layouts.dashboard.statisticsCards.bookings.title")}
                 count={281}
                 percentage={{
                   color: "success",
-                  amount: "+55%",
-                  label: "than lask week",
+                  amount: t("layouts.dashboard.statisticsCards.bookings.percentage.amount"),
+                  label: t("layouts.dashboard.statisticsCards.bookings.percentage.label"),
                 }}
               />
             </MDBox>
@@ -64,12 +64,12 @@ function Dashboard() {
             <MDBox mb={1.5}>
               <ComplexStatisticsCard
                 icon="leaderboard"
-                title="Today's Users"
+                title={t("layouts.dashboard.statisticsCards.users.title")}
                 count="2,300"
                 percentage={{
                   color: "success",
-                  amount: "+3%",
-                  label: "than last month",
+                  amount: t("layouts.dashboard.statisticsCards.users.percentage.amount"),
+                  label: t("layouts.dashboard.statisticsCards.users.percentage.label"),
                 }}
               />
             </MDBox>
@@ -79,12 +79,12 @@ function Dashboard() {
               <ComplexStatisticsCard
                 color="success"
                 icon="store"
-                title="Revenue"
+                title={t("layouts.dashboard.statisticsCards.revenue.title")}
                 count="34k"
                 percentage={{
                   color: "success",
-                  amount: "+1%",
-                  label: "than yesterday",
+                  amount: t("layouts.dashboard.statisticsCards.revenue.percentage.amount"),
+                  label: t("layouts.dashboard.statisticsCards.revenue.percentage.label"),
                 }}
               />
             </MDBox>
@@ -94,12 +94,12 @@ function Dashboard() {
               <ComplexStatisticsCard
                 color="primary"
                 icon="person_add"
-                title="Followers"
+                title={t("layouts.dashboard.statisticsCards.followers.title")}
                 count="+91"
                 percentage={{
                   color: "success",
-                  amount: "",
-                  label: "Just updated",
+                  amount: t("layouts.dashboard.statisticsCards.followers.percentage.amount"),
+                  label: t("layouts.dashboard.statisticsCards.followers.percentage.label"),
                 }}
               />
             </MDBox>
@@ -111,9 +111,9 @@ function Dashboard() {
               <MDBox mb={3}>
                 <ReportsBarChart
                   color="info"
-                  title="website views"
-                  description="Last Campaign Performance"
-                  date="campaign sent 2 days ago"
+                  title={t("layouts.dashboard.reportCharts.views.title")}
+                  description={t("layouts.dashboard.reportCharts.views.description")}
+                  date={t("layouts.dashboard.reportCharts.views.date")}
                   chart={reportsBarChartData}
                 />
               </MDBox>
@@ -122,14 +122,14 @@ function Dashboard() {
               <MDBox mb={3}>
                 <ReportsLineChart
                   color="success"
-                  title="daily sales"
+                  title={t("layouts.dashboard.reportCharts.sales.title")}
                   description={
                     <>
                       (<strong>{t("layouts.dashboard.plusPercentage")}</strong>){" "}
                       {t("layouts.dashboard.increaseTodaySales")}
                     </>
                   }
-                  date="updated 4 min ago"
+                  date={t("layouts.dashboard.reportCharts.sales.date")}
                   chart={sales}
                 />
               </MDBox>
@@ -138,9 +138,9 @@ function Dashboard() {
               <MDBox mb={3}>
                 <ReportsLineChart
                   color="dark"
-                  title="completed tasks"
-                  description="Last Campaign Performance"
-                  date="just updated"
+                  title={t("layouts.dashboard.reportCharts.tasks.title")}
+                  description={t("layouts.dashboard.reportCharts.tasks.description")}
+                  date={t("layouts.dashboard.reportCharts.tasks.date")}
                   chart={tasks}
                 />
               </MDBox>

@@ -67,7 +67,7 @@ function PaymentMethod() {
                 {t("layouts.billing.paymentMethod.cardExample1")}
               </MDTypography>
               <MDBox ml="auto" lineHeight={0} color={darkMode ? "white" : "dark"}>
-                <Tooltip title="Edit Card" placement="top">
+                <Tooltip title={t("layouts.billing.paymentMethod.toolTip")} placement="top">
                   <Icon sx={{ cursor: "pointer" }} fontSize="small">
                     {t("layouts.billing.paymentMethod.edit")}
                   </Icon>
@@ -92,7 +92,7 @@ function PaymentMethod() {
                 {t("layouts.billing.paymentMethod.cardExample2")}
               </MDTypography>
               <MDBox ml="auto" lineHeight={0} color={darkMode ? "white" : "dark"}>
-                <Tooltip title="Edit Card" placement="top">
+                <Tooltip title={t("layouts.billing.paymentMethod.toolTip")} placement="top">
                   <Icon sx={{ cursor: "pointer" }} fontSize="small">
                     {t("layouts.billing.paymentMethod.edit")}
                   </Icon>

@@ -1,1 +1,391 @@
-{}
+{
+  "appSettings": "die Einstellungen",
+  "examples": {
+    "cards": {
+      "infoCards": {
+        "social": "Sozial:",
+        "edit": "bearbeiten"
+      },
+      "masterCard": {
+        "wifi": "W-lan",
+        "cardHolder": "Kartenhalter",
+        "expires": "Läuft ab"
+      }
+    },
+    "charts": {
+      "schedule": "zeitlicher Ablauf"
+    },
+    "configurator": {
+      "muiConfigurator": "Material-UI-Konfigurator",
+      "seeDashboardOptions": "Sehen Sie sich unsere Dashboard-Optionen an.",
+      "close": "nah dran",
+      "sidenavColors": "Sidenav-Farben",
+      "sidenavType": "Sidenav-Typ",
+      "chooseSidenavTypes": "Wählen Sie zwischen verschiedenen Sidenav-Typen.",
+      "dark": "Dunkel",
+      "transparent": "Transparent",
+      "white": "Weiß",
+      "navbarFixed": "Navigationsleiste behoben",
+      "lightOrDark": "Hell dunkel",
+      "viewDocs": "Dokumentation ansehen",
+      "star": "Stern",
+      "thanksForSharing": "Ich danke Ihnen für das Teilen!",
+      "tweet": "Twittern",
+      "share": "Teilen"
+    },
+    "footer": {
+      "madeWith": ", gemacht mit",
+      "favorite": "Favorit",
+      "by": "durch",
+      "forABetterWeb": "für ein besseres Netz."
+    },
+    "dashboardNavbar": {
+      "email": "Email",
+      "podcasts": "Podcasts",
+      "shoppingCart": "Einkaufswagen",
+      "accountCircle": "Konto_Kreis",
+      "settings": "die Einstellungen",
+      "notifications": "Benachrichtigungen",
+      "checkNewMsgs": "Überprüfen Sie neue Nachrichten",
+      "managePodcastSessions": "Verwalten Sie Podcast-Sitzungen",
+      "paymentCompleted": "Zahlung erfolgreich abgeschlossen"
+    },
+    "defaultNavbar": {
+      "muiDashboard2": "Material-Dashboard 2"
+    },
+    "sidenav": {
+      "close": "nah dran",
+      "upgrade": "Upgrade auf Pro"
+    },
+    "dataTable": {
+      "headCell": {
+        "arrowDropUp": "arrow_drop_up",
+        "arrowDropDown": "arrow_drop_down"
+      },
+      "entriesPerPage": "Einträge pro Seite",
+      "showing": "Anzeigen",
+      "to": "zu",
+      "of": "von",
+      "entries": "Einträge",
+      "chevronLeft": "chevron_links",
+      "chevronRight": "chevron_right"
+    }
+  },
+  "components": {
+    "mdSnackbar": {
+      "close": "nah dran"
+    }
+  },
+  "layouts": {
+    "authentication": {
+      "footer": {
+        "aboutUs": "Über uns",
+        "blog": "Bloggen",
+        "lisence": "Lizenz",
+        "madeWith": ", gemacht mit",
+        "favorite": "Favorit",
+        "by": "durch",
+        "creativeTimSpace": "Kreativ Tim",
+        "forABetterWeb": "für ein besseres Netz.",
+        "creativeTim": "Kreativ Tim"
+      },
+      "resetPassword": {
+        "resetPassword": "Passwort zurücksetzen",
+        "willRecieveEmail": "Sie erhalten eine E-Mail in maximal 60 Sekunden",
+        "reset": "zurücksetzen"
+      },
+      "signIn": {
+        "rememberMe": "Erinnere dich an mich",
+        "signInUncap": "Einloggen",
+        "dontHaveAccount": "Sie haben kein Konto?",
+        "signUp": "Anmelden",
+        "signIn": "Einloggen",
+        "signInCap": "Einloggen",
+        "joinUs": "Trete uns heute bei",
+        "enterCredentials": "Geben Sie Ihre E-Mail-Adresse und Ihr Passwort ein, um sich zu registrieren",
+        "iAgree": "Ich stimme dem zu",
+        "termsAndConditions": "Geschäftsbedingungen",
+        "alreadyHaveAccount": "Sie haben bereits ein Konto?"
+      }
+    },
+    "billing": {
+      "bill": {
+        "delete": "löschen",
+        "edit": "bearbeiten",
+        "companyName": "Name der Firma:",
+        "emailAddress": "E-Mail-Addresse:",
+        "vatNumber": "Umsatzsteuer-Identifikationsnummer:"
+      },
+      "billingInformation": {
+        "billingInformation": "Abrechnungsdaten"
+      },
+      "invoice": {
+        "pictureAsPdf": "Bild_als_pdf",
+        "pdf": "Pdf"
+      },
+      "invoices": {
+        "invoices": "Rechnungen",
+        "viewAll": "Alle ansehen"
+      },
+      "paymentMethod": {
+        "paymentMethod": "Zahlungsmethode",
+        "add": "hinzufügen",
+        "addNewCard": "neue Karte hinzufügen",
+        "cardExample1": "**** **** **** 7852",
+        "edit": "bearbeiten",
+        "cardExample2": "**** **** **** 5248",
+        "toolTip": "Karte bearbeiten"
+      },
+      "transactions": {
+        "yourTransactions": "Ihre Transaktionen",
+        "dateRange": "Datumsbereich",
+        "exampleDatesRange": "23. - 30. März 2020",
+        "newest": "neueste",
+        "yesterday": "gestern"
+      },
+      "paypalInfoCard": {
+        "title": "Paypal",
+        "description": "Freiberufliche Bezahlung",
+        "value": "$455,00"
+      },
+      "salaryInfoCard": {
+        "title": "Gehalt",
+        "description": "Interaktiv gehören",
+        "value": "+$2000"
+      }
+    },
+    "dashboard": {
+      "ordersOverview": {
+        "ordersOverview": "Bestellübersicht",
+        "arrowUpward": "Pfeil_nach oben",
+        "percentage": "24%",
+        "thisMonth": "diesen Monat",
+        "timelineItems": {
+          "item1": {
+            "title": "$2400, Designänderungen",
+            "dateTime": "22 DEZ 19:20 UHR"
+          },
+          "item2": {
+            "title": "Neue Bestellung Nr. 1832412",
+            "dateTime": "21 DEZ 23 UHR"
+          },
+          "item3": {
+            "title": "Serverzahlungen für April",
+            "dateTime": "21. DEZEMBER 21:34 UHR"
+          },
+          "item4": {
+            "title": "Neue Karte für Bestellung Nr. 4395133 hinzugefügt",
+            "dateTime": "20 DEZ 02:20 UHR"
+          },
+          "item5": {
+            "title": "Neue Karte für Bestellung Nr. 4395133 hinzugefügt",
+            "dateTime": "18. DEZEMBER 4:54 UHR"
+          }
+        }
+      },
+      "projects": {
+        "data": {
+          "3k": "3.000 $",
+          "notSet": "Nicht festgelegt",
+          "20k": "20.500 $",
+          "5h": "$500",
+          "2k": "2.000 $",
+          "14k": "14.000 $"
+        },
+        "action": "Aktion",
+        "anotherAction": "Eine weitere Aktion",
+        "somethingElse": "Etwas anderes",
+        "projects": "Projekte",
+        "done": "erledigt",
+        "30Done": "30 fertig",
+        "thisMonth": "diesen Monat",
+        "moreVert": "mehr_vert"
+      },
+      "statisticsCards": {
+        "bookings": {
+          "title": "Buchungen",
+          "percentage": {
+            "amount": "+55 %",
+            "label": "als letzte Woche"
+          }
+        },
+        "users": {
+          "title": "Benutzer von heute",
+          "percentage": {
+            "amount": "+3%",
+            "label": "als im letzten Monat"
+          }
+        },
+        "revenue": {
+          "title": "Einnahmen",
+          "percentage": {
+            "amount": "+1 %",
+            "label": "als gestern"
+          }
+        },
+        "followers": {
+          "title": "Anhänger",
+          "percentage": {
+            "amount": "-",
+            "label": "Gerade aktualisiert"
+          }
+        }
+      },
+      "reportCharts": {
+        "views": {
+          "title": "Website-Aufrufe",
+          "description": "Leistung der letzten Kampagne",
+          "date": "Kampagne vor 2 Tagen gesendet"
+        },
+        "sales": {
+          "title": "tägliche Verkäufe",
+          "description": "-",
+          "date": "vor 4 min aktualisiert"
+        },
+        "tasks": {
+          "title": "erledigte Aufgaben",
+          "description": "Leistung der letzten Kampagne",
+          "date": "gerade aktualisiert"
+        }
+      },
+      "plusPercentage": "+15 %",
+      "increaseTodaySales": "Steigerung des heutigen Umsatzes."
+    },
+    "notifications": {
+      "alerts": "Warnungen",
+      "notifications": "Benachrichtigungen",
+      "notificationToastInfo": "Benachrichtigungen auf dieser Seite verwenden Toasts von Bootstrap. Lesen Sie hier mehr Details.",
+      "successNotification": "Erfolgsmeldung",
+      "infoNotification": "Info-Benachrichtigung",
+      "warningNotification": "Warnmeldung",
+      "errorNotification": "Fehlermeldung",
+      "alertWith": "Alarm mit",
+      "aSimple": "Eine einfache",
+      "exampleLink": "ein Beispiellink",
+      "clickSuggestion": ". Klicken Sie es an, wenn Sie möchten.",
+      "snackbars": {
+        "success": {
+          "title": "Material-Dashboard",
+          "content": "Hallo Welt! Dies ist eine Benachrichtigungsnachricht",
+          "dateTime": "Vor 11 Minuten"
+        },
+        "info": {
+          "title": "Material-Dashboard",
+          "content": "Hallo Welt! Dies ist eine Benachrichtigungsnachricht",
+          "dateTime": "Vor 11 Minuten"
+        },
+        "warning": {
+          "title": "Material-Dashboard",
+          "content": "Hallo Welt! Dies ist eine Benachrichtigungsnachricht",
+          "dateTime": "Vor 11 Minuten"
+        },
+        "error": {
+          "title": "Material-Dashboard",
+          "content": "Hallo Welt! Dies ist eine Benachrichtigungsnachricht",
+          "dateTime": "Vor 11 Minuten"
+        }
+      }
+    },
+    "profile": {
+      "header": {
+        "name": "Richard Davis",
+        "jobTitle": "CEO / Mitbegründer",
+        "home": "Heimat",
+        "email": "Email",
+        "settings": "die Einstellungen"
+      },
+      "platformSettings": {
+        "subscribe": "Newsletter abonnieren",
+        "platformSettings": "Plattformeinstellungen",
+        "account": "Konto",
+        "emailWhenFollow": "Senden Sie mir eine E-Mail, wenn mir jemand folgt",
+        "emailWhenAnswer": "Senden Sie mir eine E-Mail, wenn jemand auf meinen Beitrag antwortet",
+        "emailWhenMention": "Senden Sie mir eine E-Mail, wenn mich jemand erwähnt",
+        "application": "Anwendung",
+        "newLaunches": "Neueinführungen und Projekte",
+        "monthlyUpdates": "Monatliche Produktupdates"
+      },
+      "profileInfoCard": {
+        "title": "Profil Information",
+        "description": "Hallo, ich bin Alec Thompson, Entscheidungen: Wenn Sie sich nicht entscheiden können, lautet die Antwort nein. Wenn es zwei gleich schwierige Wege gibt, wählen Sie kurzfristig den schmerzhafteren (Schmerzvermeidung schafft eine Illusion von Gleichheit).",
+        "toolTip": "Profil bearbeiten"
+      },
+      "defaultProjectCard": {
+        "actionLabel": "Projekt ansehen",
+        "modern": {
+          "label": "Projekt Nr. 2",
+          "title": "modern",
+          "description": "Während Uber eine Menge interner Managementturbulenzen durchmacht."
+        },
+        "scandinavian": {
+          "label": "Projekt 1",
+          "title": "skandinavisch",
+          "description": "Musik ist etwas, worüber jeder seine eigene Meinung hat."
+        },
+        "minimalist": {
+          "label": "Projekt Nr. 3",
+          "title": "minimalistisch",
+          "description": "Unterschiedliche Menschen haben unterschiedliche Geschmäcker und verschiedene Arten von Musik."
+        },
+        "gothic": {
+          "label": "Projekt Nr. 4",
+          "title": "gotisch",
+          "description": "Warum sollte jemand Blau über Pink wählen? Pink ist offensichtlich eine bessere Farbe."
+        }
+      },
+      "profilesListTitle": "Gespräche",
+      "projects": "Projekte",
+      "architects": "Architekten entwerfen Häuser"
+    },
+    "rtl": {
+      "src/layouts/rtl/components/OrdersOverview/index.js:37:80:37:92": "Pfeil_nach oben",
+      "src/layouts/rtl/components/OrdersOverview/index.js:41:15:41:18": "24%",
+      "src/layouts/rtl/components/Projects/data/index.js:115:13:115:20": "14.000 $",
+      "src/layouts/rtl/components/Projects/data/index.js:136:13:136:19": "3.000 $",
+      "src/layouts/rtl/components/Projects/data/index.js:180:13:180:20": "20.500 $",
+      "src/layouts/rtl/components/Projects/data/index.js:198:13:198:17": "$500",
+      "src/layouts/rtl/components/Projects/data/index.js:219:13:219:19": "2.000 $",
+      "src/layouts/rtl/components/Projects/index.js:75:15:75:19": "erledigt",
+      "src/layouts/rtl/components/Projects/index.js:78:29:78:37": "30 Jahre",
+      "src/layouts/rtl/components/Projects/index.js:84:13:84:22": "mehr_vert",
+      "src/layouts/rtl/index.js:139:32:139:36": "+15 %"
+    },
+    "tables": {
+      "data": {
+        "authorsTable": {
+          "edit": "Bearbeiten",
+          "exampleDate1": "19.09.17",
+          "exampleDate2": "24.12.08",
+          "exampleDate3": "10.04.21",
+          "exampleDate4": "14.09.20",
+          "exampleDate5": "23.04.18",
+          "exampleDate6": "01.11.19"
+        },
+        "projectsTable": {
+          "moreVert": "mehr_vert",
+          "3k": "3.400 $",
+          "cancelled": "abgebrochen",
+          "14k": "14.000 $",
+          "working": "Arbeiten",
+          "1k": "1.000 $",
+          "2c300k": "$2.300",
+          "done": "erledigt",
+          "2c500k": "2.500 $",
+          "5k": "5.000 $"
+        }
+      },
+      "authorsTableTitle": "Autorentabelle",
+      "projectsTableTitle": "Projekttabelle"
+    }
+  },
+  "routes": {
+    "login": "Anmeldung",
+    "assignment": "Abtretung",
+    "dashboard": "Armaturenbrett",
+    "tableView": "Tabellenansicht",
+    "receiptLong": "quittung_lang",
+    "formatTextDirRTL": "format_textrichtung_r_to_l",
+    "notifications": "Benachrichtigungen",
+    "person": "Person"
+  }
+}

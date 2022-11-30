@@ -62,9 +62,9 @@ function Notifications() {
     <MDSnackbar
       color="success"
       icon="check"
-      title="Material Dashboard"
-      content="Hello, world! This is a notification message"
-      dateTime="11 mins ago"
+      title={t("layouts.notifications.snackbars.success.title")}
+      content={t("layouts.notifications.snackbars.success.content")}
+      dateTime={t("layouts.notifications.snackbars.success.dateTime")}
       open={successSB}
       onClose={closeSuccessSB}
       close={closeSuccessSB}
@@ -75,9 +75,9 @@ function Notifications() {
   const renderInfoSB = (
     <MDSnackbar
       icon="notifications"
-      title="Material Dashboard"
-      content="Hello, world! This is a notification message"
-      dateTime="11 mins ago"
+      title={t("layouts.notifications.snackbars.info.title")}
+      content={t("layouts.notifications.snackbars.info.content")}
+      dateTime={t("layouts.notifications.snackbars.info.dateTime")}
       open={infoSB}
       onClose={closeInfoSB}
       close={closeInfoSB}
@@ -88,9 +88,9 @@ function Notifications() {
     <MDSnackbar
       color="warning"
       icon="star"
-      title="Material Dashboard"
-      content="Hello, world! This is a notification message"
-      dateTime="11 mins ago"
+      title={t("layouts.notifications.snackbars.warning.title")}
+      content={t("layouts.notifications.snackbars.warning.content")}
+      dateTime={t("layouts.notifications.snackbars.warning.dateTime")}
       open={warningSB}
       onClose={closeWarningSB}
       close={closeWarningSB}
@@ -102,9 +102,9 @@ function Notifications() {
     <MDSnackbar
       color="error"
       icon="warning"
-      title="Material Dashboard"
-      content="Hello, world! This is a notification message"
-      dateTime="11 mins ago"
+      title={t("layouts.notifications.snackbars.error.title")}
+      content={t("layouts.notifications.snackbars.error.content")}
+      dateTime={t("layouts.notifications.snackbars.error.dateTime")}
       open={errorSB}
       onClose={closeErrorSB}
       close={closeErrorSB}

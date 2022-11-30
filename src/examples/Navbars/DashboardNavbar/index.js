@@ -108,15 +108,15 @@ function DashboardNavbar({ absolute, light, isMini }) {
     >
       <NotificationItem
         icon={<Icon>{t("examples.dashboardNavbar.email")}</Icon>}
-        title="Check new messages"
+        title={t("examples.dashboardNavbar.checkNewMsgs")}
       />
       <NotificationItem
         icon={<Icon>{t("examples.dashboardNavbar.podcasts")}</Icon>}
-        title="Manage Podcast sessions"
+        title={t("examples.dashboardNavbar.managePodcastSessions")}
       />
       <NotificationItem
         icon={<Icon>{t("examples.dashboardNavbar.shoppingCart")}</Icon>}
-        title="Payment successfully completed"
+        title={t("examples.dashboardNavbar.paymentCompleted")}
       />
     </Menu>
   );

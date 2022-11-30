@@ -45,7 +45,10 @@
       "shoppingCart": "shopping_cart",
       "accountCircle": "account_circle",
       "settings": "settings",
-      "notifications": "notifications"
+      "notifications": "notifications",
+      "checkNewMsgs": "Check new messages",
+      "managePodcastSessions": "Manage Podcast sessions",
+      "paymentCompleted": "Payment successfully completed"
     },
     "defaultNavbar": {
       "muiDashboard2": "Material Dashboard 2"
@@ -130,7 +133,8 @@
         "addNewCard": " add new card",
         "cardExample1": "**** **** **** 7852",
         "edit": "edit",
-        "cardExample2": "**** **** **** 5248"
+        "cardExample2": "**** **** **** 5248",
+        "toolTip": "Edit Card"
       },
       "transactions": {
         "yourTransactions": "Your Transactions",
@@ -138,6 +142,16 @@
         "exampleDatesRange": "23 - 30 March 2020",
         "newest": "newest",
         "yesterday": "yesterday"
+      },
+      "paypalInfoCard": {
+        "title": "paypal",
+        "description": "Freelance Payment",
+        "value": "$455.00"
+      },
+      "salaryInfoCard": {
+        "title": "salary",
+        "description": "Belong Interactive",
+        "value": "+$2000"
       }
     },
     "dashboard": {
@@ -145,7 +159,29 @@
         "ordersOverview": "Orders overview",
         "arrowUpward": "arrow_upward",
         "percentage": "24%",
-        "thisMonth": "this month"
+        "thisMonth": "this month",
+        "timelineItems": {
+          "item1": {
+            "title": "$2400, Design changes",
+            "dateTime": "22 DEC 7:20 PM"
+          },
+          "item2": {
+            "title": "New order #1832412",
+            "dateTime": "21 DEC 11 PM"
+          },
+          "item3": {
+            "title": "Server payments for April",
+            "dateTime": "21 DEC 9:34 PM"
+          },
+          "item4": {
+            "title": "New card added for order #4395133",
+            "dateTime": "20 DEC 2:20 AM"
+          },
+          "item5": {
+            "title": "New card added for order #4395133",
+            "dateTime": "18 DEC 4:54 AM"
+          }
+        }
       },
       "projects": {
         "data": {
@@ -165,6 +201,53 @@
         "thisMonth": "this month",
         "moreVert": "more_vert"
       },
+      "statisticsCards": {
+        "bookings": {
+          "title": "Bookings",
+          "percentage": {
+            "amount": "+55%",
+            "label": "than last week"
+          }
+        },
+        "users": {
+          "title": "Today's Users",
+          "percentage": {
+            "amount": "+3%",
+            "label": "than last month"
+          }
+        },
+        "revenue": {
+          "title": "Revenue",
+          "percentage": {
+            "amount": "+1%",
+            "label": "than yesterday"
+          }
+        },
+        "followers": {
+          "title": "Followers",
+          "percentage": {
+            "amount": "",
+            "label": "Just updated"
+          }
+        }
+      },
+      "reportCharts": {
+        "views": {
+          "title": "website views",
+          "description": "Last Campaign Performance",
+          "date": "campaign sent 2 days ago"
+        },
+        "sales": {
+          "title": "daily sales",
+          "description": "",
+          "date": "updated 4 min ago"
+        },
+        "tasks": {
+          "title": "completed tasks",
+          "description": "Last Campaign Performance",
+          "date": "just updated"
+        }
+      },
       "plusPercentage": "+15%",
       "increaseTodaySales": "increase in today sales."
     },
@@ -179,7 +262,29 @@
       "alertWith": "alert with",
       "aSimple": "A simple",
       "exampleLink": "an example link",
-      "clickSuggestion": ". Give it a click if you like."
+      "clickSuggestion": ". Give it a click if you like.",
+      "snackbars": {
+        "success": {
+          "title": "Material Dashboard",
+          "content": "Hello, world! This is a notification message",
+          "dateTime": "11 mins ago"
+        },
+        "info": {
+          "title": "Material Dashboard",
+          "content": "Hello, world! This is a notification message",
+          "dateTime": "11 mins ago"
+        },
+        "warning": {
+          "title": "Material Dashboard",
+          "content": "Hello, world! This is a notification message",
+          "dateTime": "11 mins ago"
+        },
+        "error": {
+          "title": "Material Dashboard",
+          "content": "Hello, world! This is a notification message",
+          "dateTime": "11 mins ago"
+        }
+      }
     },
     "profile": {
       "header": {
@@ -200,6 +305,35 @@
         "newLaunches": "New launches and projects",
         "monthlyUpdates": "Monthly product updates"
       },
+      "profileInfoCard": {
+        "title": "profile information",
+        "description": "Hi, I’m Alec Thompson, Decisions: If you can’t decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality).",
+        "toolTip": "Edit Profile"
+      },
+      "defaultProjectCard": {
+        "actionLabel": "view project",
+        "modern": {
+          "label": "project #2",
+          "title": "modern",
+          "description": "As Uber works through a huge amount of internal management turmoil."
+        },
+        "scandinavian": {
+          "label": "project #1",
+          "title": "scandinavian",
+          "description": "Music is something that everyone has their own specific opinion about."
+        },
+        "minimalist": {
+          "label": "project #3",
+          "title": "minimalist",
+          "description": "Different people have different taste, and various types of music."
+        },
+        "gothic": {
+          "label": "project #4",
+          "title": "gothic",
+          "description": "Why would anyone pick blue over pink? Pink is obviously a better color."
+        }
+      },
+      "profilesListTitle": "conversations",
       "projects": "Projects",
       "architects": "Architects design houses"
     },
