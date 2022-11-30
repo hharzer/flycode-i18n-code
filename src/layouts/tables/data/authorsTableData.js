@@ -27,7 +27,7 @@ import team3 from "assets/images/team-3.jpg";
 import team4 from "assets/images/team-4.jpg";
 import { useTranslation } from "react-i18next";
 
-export default function data() {
+export default function useAuthorsTableData() {
   const { t } = useTranslation();
   const Author = ({ image, name, email }) => (
     <MDBox display="flex" alignItems="center" lineHeight={1}>

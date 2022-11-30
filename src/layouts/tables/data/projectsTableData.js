@@ -33,7 +33,7 @@ import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
 import logoInvesion from "assets/images/small-logos/logo-invision.svg";
 import { useTranslation } from "react-i18next";
 
-export default function data() {
+export default function useProjectsTableData() {
   const { t } = useTranslation();
   const Project = ({ image, name }) => (
     <MDBox display="flex" alignItems="center" lineHeight={1}>

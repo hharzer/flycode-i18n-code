@@ -35,7 +35,7 @@ import team3 from "assets/images/team-3.jpg";
 import team4 from "assets/images/team-4.jpg";
 import { useTranslation } from "react-i18next";
 
-export default function data() {
+export default function useProjectsData() {
   const { t } = useTranslation();
   const avatars = (members) =>
     members.map(([image, name]) => (

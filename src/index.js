@@ -17,10 +17,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import App from "App";
+import initializeI18n from "./i18n";
 
 // Material Dashboard 2 React Context Provider
 import { MaterialUIControllerProvider } from "context";
-import { LanguageProvider } from "context/language-context";
+import { LanguageProvider, DEFAULT_LANGUAGE } from "context/language-context";
+
+initializeI18n(DEFAULT_LANGUAGE);
 
 ReactDOM.render(
   <BrowserRouter>
