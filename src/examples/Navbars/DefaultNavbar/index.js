@@ -39,8 +39,10 @@ import breakpoints from "assets/theme/base/breakpoints";
 
 // Material Dashboard 2 React context
 import { useMaterialUIController } from "context";
+import { useTranslation } from "react-i18next";
 
 function DefaultNavbar({ transparent, light, action }) {
+  const { t } = useTranslation();
   const [controller] = useMaterialUIController();
   const { darkMode } = controller;
 
