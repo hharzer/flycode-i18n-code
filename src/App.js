@@ -45,12 +45,10 @@ import { useMaterialUIController, setMiniSidenav, setOpenConfigurator } from "co
 // Images
 import brandWhite from "assets/images/logo-ct.png";
 import brandDark from "assets/images/logo-ct-dark.png";
-import { useLanguage } from "context/language-context";
 import { useTranslation } from "react-i18next";
-import initializeI18n from "./i18n";
 
 export default function App() {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
   const [controller, dispatch] = useMaterialUIController();
   const {
     miniSidenav,
@@ -64,7 +62,6 @@ export default function App() {
   } = controller;
   const [onMouseEnter, setOnMouseEnter] = useState(false);
   const { pathname } = useLocation();
-  const { language } = useLanguage();
 
   const getRoutes = useCallback(
     (allRoutes) =>
@@ -134,7 +131,7 @@ export default function App() {
       onClick={handleConfiguratorOpen}
     >
       <Icon fontSize="small" color="inherit">
-        {/* {t("appSettings")} */}settings
+        {t("appSettings")}
       </Icon>
     </MDBox>
   );

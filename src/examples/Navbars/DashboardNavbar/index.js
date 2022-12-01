@@ -13,7 +13,7 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 // react-router components
 import { useLocation, Link } from "react-router-dom";
@@ -53,9 +53,12 @@ import {
   setOpenConfigurator,
 } from "context";
 import { useTranslation } from "react-i18next";
+import { Box, Button, Typography } from "@mui/material";
+import { useLanguage } from "context/language-context";
 
 function DashboardNavbar({ absolute, light, isMini }) {
   const { t } = useTranslation();
+  const { language, setLanguage } = useLanguage();
   const [navbarType, setNavbarType] = useState();
   const [controller, dispatch] = useMaterialUIController();
   const { miniSidenav, transparentNavbar, fixedNavbar, openConfigurator, darkMode } = controller;
@@ -92,6 +95,10 @@ function DashboardNavbar({ absolute, light, isMini }) {
   const handleConfiguratorOpen = () => setOpenConfigurator(dispatch, !openConfigurator);
   const handleOpenMenu = (event) => setOpenMenu(event.currentTarget);
   const handleCloseMenu = () => setOpenMenu(false);
+
+  console.log(language);
+  const handleEngSelect = useCallback(() => setLanguage("en-US"), [setLanguage]);
+  const handleGerSelect = useCallback(() => setLanguage("de-DE"), [setLanguage]);
 
   // Render the notifications menu
   const renderMenu = () => (
@@ -149,6 +156,15 @@ function DashboardNavbar({ absolute, light, isMini }) {
             <MDBox pr={1}>
               <MDInput label="Search here" />
             </MDBox>
+            <Box>
+              <Button variant="text" disabled={language === "en-US"} onClick={handleEngSelect}>
+                <Typography>EN</Typography>
+              </Button>
+              |
+              <Button variant="text" disabled={language === "de-DE"} onClick={handleGerSelect}>
+                <Typography>DE</Typography>
+              </Button>
+            </Box>
             <MDBox color={light ? "white" : "inherit"}>
               <Link to="/authentication/sign-in/basic">
                 <IconButton sx={navbarIconButton} size="small" disableRipple>
