@@ -39,7 +39,8 @@
       "notifications": "Benachrichtigungen",
       "checkNewMsgs": "Überprüfen Sie neue Nachrichten",
       "managePodcastSessions": "Verwalten Sie Podcast-Sitzungen",
-      "paymentCompleted": "Zahlung erfolgreich abgeschlossen"
+      "paymentCompleted": "Zahlung erfolgreich abgeschlossen",
+      "searchHere": "Suche hier"
     },
     "defaultNavbar": { "muiDashboard2": "Material-Dashboard 2" },
     "sidenav": { "close": "nah dran", "upgrade": "Upgrade auf Pro" },

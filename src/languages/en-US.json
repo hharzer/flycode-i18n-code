@@ -48,7 +48,8 @@
       "notifications": "notifications",
       "checkNewMsgs": "Check new messages",
       "managePodcastSessions": "Manage Podcast sessions",
-      "paymentCompleted": "Payment successfully completed"
+      "paymentCompleted": "Payment successfully completed",
+      "searchHere": "Search here"
     },
     "defaultNavbar": {
       "muiDashboard2": "Material Dashboard 2"
