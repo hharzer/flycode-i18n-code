@@ -343,8 +343,8 @@
       "billing": "Abrechnung",
       "notifications": "Benachrichtigungen",
       "profile": "Profil",
-      "signIn": "Einloggen",
-      "signUp": "Anmeldung"
+      "sign-in": "Einloggen",
+      "sign-up": "Anmeldung"
     }
   }
 }

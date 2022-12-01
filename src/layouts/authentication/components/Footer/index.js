@@ -56,7 +56,7 @@ function Footer({ light }) {
             {t("layouts.authentication.footer.madeWith")}
             <MDBox fontSize={size.md} color={light ? "white" : "dark"} mb={-0.5} mx={0.25}>
               <Icon color="inherit" fontSize="inherit">
-                {t("layouts.authentication.footer.favorite")}
+                favorite
               </Icon>
             </MDBox>
             {t("layouts.authentication.footer.by")}

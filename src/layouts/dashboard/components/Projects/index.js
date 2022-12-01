@@ -76,7 +76,7 @@ function Projects() {
                 mt: -0.5,
               }}
             >
-              {t("layouts.dashboard.projects.done")}
+              done
             </Icon>
             <MDTypography variant="button" fontWeight="regular" color="text">
               &nbsp;<strong>{t("layouts.dashboard.projects.30Done")}</strong>{" "}
@@ -86,7 +86,7 @@ function Projects() {
         </MDBox>
         <MDBox color="text" px={2}>
           <Icon sx={{ cursor: "pointer", fontWeight: "bold" }} fontSize="small" onClick={openMenu}>
-            {t("layouts.dashboard.projects.moreVert")}
+            more_vert
           </Icon>
         </MDBox>
         {renderMenu}

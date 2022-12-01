@@ -115,7 +115,7 @@ function Header({ children }) {
                   label="App"
                   icon={
                     <Icon fontSize="small" sx={{ mt: -0.25 }}>
-                      {t("layouts.profile.header.home")}
+                      home
                     </Icon>
                   }
                 />
@@ -123,7 +123,7 @@ function Header({ children }) {
                   label="Message"
                   icon={
                     <Icon fontSize="small" sx={{ mt: -0.25 }}>
-                      {t("layouts.profile.header.email")}
+                      email
                     </Icon>
                   }
                 />
@@ -131,7 +131,7 @@ function Header({ children }) {
                   label="Settings"
                   icon={
                     <Icon fontSize="small" sx={{ mt: -0.25 }}>
-                      {t("layouts.profile.header.settings")}
+                      settings
                     </Icon>
                   }
                 />

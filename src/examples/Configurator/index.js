@@ -157,7 +157,7 @@ function Configurator() {
           })}
           onClick={handleCloseConfigurator}
         >
-          {t("examples.configurator.close")}
+          close
         </Icon>
       </MDBox>
 

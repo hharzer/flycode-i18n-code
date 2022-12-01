@@ -68,7 +68,7 @@ function MDSnackbar({ color, icon, title, dateTime, content, close, bgWhite, ...
       {...rest}
       action={
         <IconButton size="small" aria-label="close" color="inherit" onClick={close}>
-          <Icon fontSize="small">{t("components.mdSnackbar.close")}</Icon>
+          <Icon fontSize="small">close</Icon>
         </IconButton>
       }
     >
@@ -120,7 +120,7 @@ function MDSnackbar({ color, icon, title, dateTime, content, close, bgWhite, ...
               }}
               onClick={close}
             >
-              {t("components.mdSnackbar.close")}
+              close
             </Icon>
           </MDBox>
         </MDBox>

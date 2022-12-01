@@ -66,7 +66,7 @@ function Footer({ company, links }) {
         {t("examples.footer.madeWith")}
         <MDBox fontSize={size.md} color="text" mb={-0.5} mx={0.25}>
           <Icon color="inherit" fontSize="inherit">
-            {t("examples.footer.favorite")}
+            favorite
           </Icon>
         </MDBox>
         {t("examples.footer.by")}

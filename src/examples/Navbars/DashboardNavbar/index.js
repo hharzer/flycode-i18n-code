@@ -114,15 +114,15 @@ function DashboardNavbar({ absolute, light, isMini }) {
       sx={{ mt: 2 }}
     >
       <NotificationItem
-        icon={<Icon>{t("examples.dashboardNavbar.email")}</Icon>}
+        icon={<Icon>email</Icon>}
         title={t("examples.dashboardNavbar.checkNewMsgs")}
       />
       <NotificationItem
-        icon={<Icon>{t("examples.dashboardNavbar.podcasts")}</Icon>}
+        icon={<Icon>podcasts</Icon>}
         title={t("examples.dashboardNavbar.managePodcastSessions")}
       />
       <NotificationItem
-        icon={<Icon>{t("examples.dashboardNavbar.shoppingCart")}</Icon>}
+        icon={<Icon>shopping_cart</Icon>}
         title={t("examples.dashboardNavbar.paymentCompleted")}
       />
     </Menu>
@@ -168,7 +168,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
             <MDBox color={light ? "white" : "inherit"}>
               <Link to="/authentication/sign-in/basic">
                 <IconButton sx={navbarIconButton} size="small" disableRipple>
-                  <Icon sx={iconsStyle}>{t("examples.dashboardNavbar.accountCircle")}</Icon>
+                  <Icon sx={iconsStyle}>account_circle</Icon>
                 </IconButton>
               </Link>
               <IconButton
@@ -189,7 +189,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
                 sx={navbarIconButton}
                 onClick={handleConfiguratorOpen}
               >
-                <Icon sx={iconsStyle}>{t("examples.dashboardNavbar.settings")}</Icon>
+                <Icon sx={iconsStyle}>settings</Icon>
               </IconButton>
               <IconButton
                 size="small"
@@ -201,7 +201,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
                 variant="contained"
                 onClick={handleOpenMenu}
               >
-                <Icon sx={iconsStyle}>{t("examples.dashboardNavbar.notifications")}</Icon>
+                <Icon sx={iconsStyle}>notifications</Icon>
               </IconButton>
               {renderMenu()}
             </MDBox>

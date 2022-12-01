@@ -98,7 +98,7 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
           sx={{ textDecoration: "none" }}
         >
           <SidenavCollapse
-            name={name}
+            name={t(`routes.routeNames.${key}`)}
             icon={icon}
             active={key === collapseName}
             noCollapse={noCollapse}
@@ -106,7 +106,11 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
         </Link>
       ) : (
         <NavLink key={key} to={route}>
-          <SidenavCollapse name={name} icon={icon} active={key === collapseName} />
+          <SidenavCollapse
+            name={t(`routes.routeNames.${key}`)}
+            icon={icon}
+            active={key === collapseName}
+          />
         </NavLink>
       );
     } else if (type === "title") {
@@ -158,7 +162,7 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
           sx={{ cursor: "pointer" }}
         >
           <MDTypography variant="h6" color="secondary">
-            <Icon sx={{ fontWeight: "bold" }}>{t("examples.sidenav.close")}</Icon>
+            <Icon sx={{ fontWeight: "bold" }}>close</Icon>
           </MDTypography>
         </MDBox>
         <MDBox component={NavLink} to="/" display="flex" alignItems="center">

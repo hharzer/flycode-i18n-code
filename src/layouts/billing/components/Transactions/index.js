@@ -38,7 +38,7 @@ function Transactions() {
         <MDBox display="flex" alignItems="flex-start">
           <MDBox color="text" mr={0.5} lineHeight={0}>
             <Icon color="inherit" fontSize="small">
-              {t("layouts.billing.transactions.dateRange")}
+              date_range
             </Icon>
           </MDBox>
           <MDTypography variant="button" color="text" fontWeight="regular">

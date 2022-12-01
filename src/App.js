@@ -85,7 +85,7 @@ export default function App() {
       setMiniSidenav(dispatch, false);
       setOnMouseEnter(true);
     }
-  }, []);
+  }, [dispatch, miniSidenav, onMouseEnter]);
 
   // Close sidenav when mouse leave mini sidenav
   const handleOnMouseLeave = useCallback(() => {
@@ -93,12 +93,12 @@ export default function App() {
       setMiniSidenav(dispatch, true);
       setOnMouseEnter(false);
     }
-  }, []);
+  }, [dispatch, onMouseEnter]);
 
   // Change the openConfigurator state
   const handleConfiguratorOpen = useCallback(
     () => setOpenConfigurator(dispatch, !openConfigurator),
-    []
+    [dispatch, openConfigurator]
   );
 
   // Setting the dir attribute for the body element
@@ -131,7 +131,7 @@ export default function App() {
       onClick={handleConfiguratorOpen}
     >
       <Icon fontSize="small" color="inherit">
-        {t("appSettings")}
+        settings
       </Icon>
     </MDBox>
   );

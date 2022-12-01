@@ -36,9 +36,7 @@ function OrdersOverview() {
         <MDBox mt={0} mb={2}>
           <MDTypography variant="button" color="text" fontWeight="regular">
             <MDTypography display="inline" variant="body2" verticalAlign="middle">
-              <Icon sx={{ color: ({ palette: { success } }) => success.main }}>
-                {t("layouts.dashboard.ordersOverview.arrowUpward")}
-              </Icon>
+              <Icon sx={{ color: ({ palette: { success } }) => success.main }}>arrow_upward</Icon>
             </MDTypography>
             &nbsp;
             <MDTypography variant="button" color="text" fontWeight="medium">

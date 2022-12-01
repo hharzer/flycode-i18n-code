@@ -247,7 +247,7 @@ function DataTable({
           >
             {canPreviousPage && (
               <MDPagination item onClick={() => previousPage()}>
-                <Icon sx={{ fontWeight: "bold" }}>{t("examples.dataTable.chevronLeft")}</Icon>
+                <Icon sx={{ fontWeight: "bold" }}>chevron_left</Icon>
               </MDPagination>
             )}
             {renderPagination.length > 6 ? (
@@ -263,7 +263,7 @@ function DataTable({
             )}
             {canNextPage && (
               <MDPagination item onClick={() => nextPage()}>
-                <Icon sx={{ fontWeight: "bold" }}>{t("examples.dataTable.chevronRight")}</Icon>
+                <Icon sx={{ fontWeight: "bold" }}>chevron_right</Icon>
               </MDPagination>
             )}
           </MDPagination>

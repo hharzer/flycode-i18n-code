@@ -72,7 +72,7 @@ function DataTableHeadCell({ width, children, sorted, align, ...rest }) {
               color={sorted === "asce" ? "text" : "secondary"}
               opacity={sorted === "asce" ? 1 : 0.5}
             >
-              <Icon>{t("examples.dataTable.headCell.arrowDropUp")}</Icon>
+              <Icon>arrow_drop_up</Icon>
             </MDBox>
             <MDBox
               position="absolute"
@@ -80,7 +80,7 @@ function DataTableHeadCell({ width, children, sorted, align, ...rest }) {
               color={sorted === "desc" ? "text" : "secondary"}
               opacity={sorted === "desc" ? 1 : 0.5}
             >
-              <Icon>{t("examples.dataTable.headCell.arrowDropDown")}</Icon>
+              <Icon>arrow_drop_down</Icon>
             </MDBox>
           </MDBox>
         )}

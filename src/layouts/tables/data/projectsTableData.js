@@ -80,7 +80,7 @@ export default function useProjectsTableData() {
         completion: <Progress color="info" value={60} />,
         action: (
           <MDTypography component="a" href="#" color="text">
-            <Icon>{t("layouts.tables.data.projectsTable.moreVert")}</Icon>
+            <Icon>more_vert</Icon>
           </MDTypography>
         ),
       },
@@ -99,7 +99,7 @@ export default function useProjectsTableData() {
         completion: <Progress color="success" value={100} />,
         action: (
           <MDTypography component="a" href="#" color="text">
-            <Icon>{t("layouts.tables.data.projectsTable.moreVert")}</Icon>
+            <Icon>more_vert</Icon>
           </MDTypography>
         ),
       },
@@ -118,7 +118,7 @@ export default function useProjectsTableData() {
         completion: <Progress color="error" value={30} />,
         action: (
           <MDTypography component="a" href="#" color="text">
-            <Icon>{t("layouts.tables.data.projectsTable.moreVert")}</Icon>
+            <Icon>more_vert</Icon>
           </MDTypography>
         ),
       },
@@ -137,7 +137,7 @@ export default function useProjectsTableData() {
         completion: <Progress color="info" value={80} />,
         action: (
           <MDTypography component="a" href="#" color="text">
-            <Icon>{t("layouts.tables.data.projectsTable.moreVert")}</Icon>
+            <Icon>more_vert</Icon>
           </MDTypography>
         ),
       },
@@ -156,7 +156,7 @@ export default function useProjectsTableData() {
         completion: <Progress color="error" value={0} />,
         action: (
           <MDTypography component="a" href="#" color="text">
-            <Icon>{t("layouts.tables.data.projectsTable.moreVert")}</Icon>
+            <Icon>more_vert</Icon>
           </MDTypography>
         ),
       },
@@ -175,7 +175,7 @@ export default function useProjectsTableData() {
         completion: <Progress color="success" value={100} />,
         action: (
           <MDTypography component="a" href="#" color="text">
-            <Icon>{t("layouts.tables.data.projectsTable.moreVert")}</Icon>
+            <Icon>more_vert</Icon>
           </MDTypography>
         ),
       },

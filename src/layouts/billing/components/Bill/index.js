@@ -60,12 +60,12 @@ function Bill({ name, company, email, vat, noGutter }) {
           <MDBox display="flex" alignItems="center" mt={{ xs: 2, sm: 0 }} ml={{ xs: -1.5, sm: 0 }}>
             <MDBox mr={1}>
               <MDButton variant="text" color="error">
-                <Icon>{t("layouts.billing.bill.delete")}</Icon>&nbsp;
+                <Icon>delete</Icon>&nbsp;
                 {t("layouts.billing.bill.delete")}
               </MDButton>
             </MDBox>
             <MDButton variant="text" color={darkMode ? "white" : "dark"}>
-              <Icon>{t("layouts.billing.bill.edit")}</Icon>&nbsp;{t("layouts.billing.bill.edit")}
+              <Icon>edit</Icon>&nbsp;{t("layouts.billing.bill.edit")}
             </MDButton>
           </MDBox>
         </MDBox>
