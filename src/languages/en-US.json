@@ -37,7 +37,13 @@
       "madeWith": ", made with",
       "favorite": "favorite",
       "by": "by",
-      "forABetterWeb": "for a better web."
+      "forABetterWeb": "for a better web.",
+      "links": {
+        "creativeTim": "Creative Tim",
+        "aboutUs": "About Us",
+        "blog": "Blog",
+        "license": "License"
+      }
     },
     "dashboardNavbar": {
       "email": "email",

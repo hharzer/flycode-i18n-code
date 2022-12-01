@@ -35,10 +35,10 @@ function Footer({ company, links }) {
 
   const renderLinks = () =>
     links.map((link) => (
-      <MDBox key={link.name} component="li" px={2} lineHeight={1}>
+      <MDBox key={link.key} component="li" px={2} lineHeight={1}>
         <Link href={link.href} target="_blank">
           <MDTypography variant="button" fontWeight="regular" color="text">
-            {link.name}
+            {t(`examples.footer.links.${link.key}`)}
           </MDTypography>
         </Link>
       </MDBox>
@@ -104,10 +104,10 @@ function Footer({ company, links }) {
 Footer.defaultProps = {
   company: { href: "https://www.creative-tim.com/", name: "Creative Tim" },
   links: [
-    { href: "https://www.creative-tim.com/", name: "Creative Tim" },
-    { href: "https://www.creative-tim.com/presentation", name: "About Us" },
-    { href: "https://www.creative-tim.com/blog", name: "Blog" },
-    { href: "https://www.creative-tim.com/license", name: "License" },
+    { href: "https://www.creative-tim.com/", name: "Creative Tim", key: "creativeTim" },
+    { href: "https://www.creative-tim.com/presentation", name: "About Us", key: "aboutUs" },
+    { href: "https://www.creative-tim.com/blog", name: "Blog", key: "blog" },
+    { href: "https://www.creative-tim.com/license", name: "License", key: "license" },
   ],
 };
 

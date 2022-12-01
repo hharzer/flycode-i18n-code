@@ -67,7 +67,13 @@
         "by": "durch",
         "creativeTimSpace": "Kreativ Tim",
         "forABetterWeb": "für ein besseres Netz.",
-        "creativeTim": "Kreativ Tim"
+        "creativeTim": "Kreativ Tim",
+        "links": {
+          "creativeTim": "Kreativ Tim",
+          "aboutUs": "Über uns",
+          "blog": "Blog",
+          "license": "Lizenz"
+        }
       },
       "resetPassword": {
         "resetPassword": "Passwort zurücksetzen",
