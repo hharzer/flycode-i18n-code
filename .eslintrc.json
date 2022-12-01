@@ -36,6 +36,7 @@
       }
     ],
     "no-plusplus": "off",
+    "react/display-name": "off",
     "no-return-assign": "error",
     "no-underscore-dangle": "error",
     "no-unused-vars": "off",
