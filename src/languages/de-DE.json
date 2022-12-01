@@ -2,19 +2,10 @@
   "appSettings": "die Einstellungen",
   "examples": {
     "cards": {
-      "infoCards": {
-        "social": "Sozial:",
-        "edit": "bearbeiten"
-      },
-      "masterCard": {
-        "wifi": "W-lan",
-        "cardHolder": "Kartenhalter",
-        "expires": "Läuft ab"
-      }
+      "infoCards": { "social": "Sozial:", "edit": "bearbeiten" },
+      "masterCard": { "wifi": "W-lan", "cardHolder": "Kartenhalter", "expires": "Läuft ab" }
     },
-    "charts": {
-      "schedule": "zeitlicher Ablauf"
-    },
+    "charts": { "schedule": "zeitlicher Ablauf" },
     "configurator": {
       "muiConfigurator": "Material-UI-Konfigurator",
       "seeDashboardOptions": "Sehen Sie sich unsere Dashboard-Optionen an.",
@@ -50,18 +41,10 @@
       "managePodcastSessions": "Verwalten Sie Podcast-Sitzungen",
       "paymentCompleted": "Zahlung erfolgreich abgeschlossen"
     },
-    "defaultNavbar": {
-      "muiDashboard2": "Material-Dashboard 2"
-    },
-    "sidenav": {
-      "close": "nah dran",
-      "upgrade": "Upgrade auf Pro"
-    },
+    "defaultNavbar": { "muiDashboard2": "Material-Dashboard 2" },
+    "sidenav": { "close": "nah dran", "upgrade": "Upgrade auf Pro" },
     "dataTable": {
-      "headCell": {
-        "arrowDropUp": "arrow_drop_up",
-        "arrowDropDown": "arrow_drop_down"
-      },
+      "headCell": { "arrowDropUp": "arrow_drop_up", "arrowDropDown": "arrow_drop_down" },
       "entriesPerPage": "Einträge pro Seite",
       "showing": "Anzeigen",
       "to": "zu",
@@ -71,11 +54,7 @@
       "chevronRight": "chevron_right"
     }
   },
-  "components": {
-    "mdSnackbar": {
-      "close": "nah dran"
-    }
-  },
+  "components": { "mdSnackbar": { "close": "nah dran" } },
   "layouts": {
     "authentication": {
       "footer": {
@@ -116,17 +95,9 @@
         "emailAddress": "E-Mail-Addresse:",
         "vatNumber": "Umsatzsteuer-Identifikationsnummer:"
       },
-      "billingInformation": {
-        "billingInformation": "Abrechnungsdaten"
-      },
-      "invoice": {
-        "pictureAsPdf": "Bild_als_pdf",
-        "pdf": "Pdf"
-      },
-      "invoices": {
-        "invoices": "Rechnungen",
-        "viewAll": "Alle ansehen"
-      },
+      "billingInformation": { "billingInformation": "Abrechnungsdaten" },
+      "invoice": { "pictureAsPdf": "Bild_als_pdf", "pdf": "Pdf" },
+      "invoices": { "invoices": "Rechnungen", "viewAll": "Alle ansehen" },
       "paymentMethod": {
         "paymentMethod": "Zahlungsmethode",
         "add": "hinzufügen",
@@ -161,18 +132,9 @@
         "percentage": "24%",
         "thisMonth": "diesen Monat",
         "timelineItems": {
-          "item1": {
-            "title": "$2400, Designänderungen",
-            "dateTime": "22 DEZ 19:20 UHR"
-          },
-          "item2": {
-            "title": "Neue Bestellung Nr. 1832412",
-            "dateTime": "21 DEZ 23 UHR"
-          },
-          "item3": {
-            "title": "Serverzahlungen für April",
-            "dateTime": "21. DEZEMBER 21:34 UHR"
-          },
+          "item1": { "title": "$2400, Designänderungen", "dateTime": "22 DEZ 19:20 UHR" },
+          "item2": { "title": "Neue Bestellung Nr. 1832412", "dateTime": "21 DEZ 23 UHR" },
+          "item3": { "title": "Serverzahlungen für April", "dateTime": "21. DEZEMBER 21:34 UHR" },
           "item4": {
             "title": "Neue Karte für Bestellung Nr. 4395133 hinzugefügt",
             "dateTime": "20 DEZ 02:20 UHR"
@@ -204,31 +166,19 @@
       "statisticsCards": {
         "bookings": {
           "title": "Buchungen",
-          "percentage": {
-            "amount": "+55 %",
-            "label": "als letzte Woche"
-          }
+          "percentage": { "amount": "+55 %", "label": "als letzte Woche" }
         },
         "users": {
           "title": "Benutzer von heute",
-          "percentage": {
-            "amount": "+3%",
-            "label": "als im letzten Monat"
-          }
+          "percentage": { "amount": "+3 %", "label": "als im letzten Monat" }
         },
         "revenue": {
           "title": "Einnahmen",
-          "percentage": {
-            "amount": "+1 %",
-            "label": "als gestern"
-          }
+          "percentage": { "amount": "+1 %", "label": "als gestern" }
         },
         "followers": {
           "title": "Anhänger",
-          "percentage": {
-            "amount": "-",
-            "label": "Gerade aktualisiert"
-          }
+          "percentage": { "amount": "-", "label": "Gerade aktualisiert" }
         }
       },
       "reportCharts": {
@@ -386,6 +336,15 @@
     "receiptLong": "quittung_lang",
     "formatTextDirRTL": "format_textrichtung_r_to_l",
     "notifications": "Benachrichtigungen",
-    "person": "Person"
+    "person": "Person",
+    "routeNames": {
+      "dashboard": "Armaturenbrett",
+      "tables": "Tische",
+      "billing": "Abrechnung",
+      "notifications": "Benachrichtigungen",
+      "profile": "Profil",
+      "signIn": "Einloggen",
+      "signUp": "Anmeldung"
+    }
   }
 }

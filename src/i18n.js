@@ -13,18 +13,17 @@ const resources = {
   },
 };
 
-export default function initializeI18n(lng) {
-  i18n.use(initReactI18next).init({
-    resources,
-    lng,
-    fallbackLng: "en-US",
-    interpolation: {
-      escapeValue: false,
-      // eslint-disable-next-line camelcase
-      format(value, format_type) {
-        if (value instanceof Date) return format(value, format_type);
-        return value;
-      },
+i18n.use(initReactI18next).init({
+  resources,
+  fallbackLng: "en-US",
+  interpolation: {
+    escapeValue: false,
+    // eslint-disable-next-line camelcase
+    format(value, format_type) {
+      if (value instanceof Date) return format(value, format_type);
+      return value;
     },
-  });
-}
+  },
+});
+
+export default i18n;

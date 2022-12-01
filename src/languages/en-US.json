@@ -386,6 +386,15 @@
     "receiptLong": "receipt_long",
     "formatTextDirRTL": "format_textdirection_r_to_l",
     "notifications": "notifications",
-    "person": "person"
+    "person": "person",
+    "routeNames": {
+      "dashboard": "Dashboard",
+      "tables": "Tables",
+      "billing": "Billing",
+      "notifications": "Notifications",
+      "profile": "Profile",
+      "signIn": "Sign In",
+      "signUp": "Sign Up"
+    }
   }
 }
