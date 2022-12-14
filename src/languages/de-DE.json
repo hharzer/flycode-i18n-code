@@ -1,15 +1,12 @@
 {
-  "appSettings": "die Einstellungen",
   "examples": {
     "cards": {
-      "infoCards": { "social": "Sozial:", "edit": "bearbeiten" },
-      "masterCard": { "wifi": "W-lan", "cardHolder": "Kartenhalter", "expires": "Läuft ab" }
+      "infoCards": { "social": "Sozial:" },
+      "masterCard": { "cardHolder": "Kartenhalter", "expires": "Läuft ab" }
     },
-    "charts": { "schedule": "zeitlicher Ablauf" },
     "configurator": {
       "muiConfigurator": "Material-UI-Konfigurator",
       "seeDashboardOptions": "Sehen Sie sich unsere Dashboard-Optionen an.",
-      "close": "nah dran",
       "sidenavColors": "Sidenav-Farben",
       "sidenavType": "Sidenav-Typ",
       "chooseSidenavTypes": "Wählen Sie zwischen verschiedenen Sidenav-Typen.",
@@ -26,36 +23,31 @@
     },
     "footer": {
       "madeWith": ", gemacht mit",
-      "favorite": "Favorit",
       "by": "durch",
-      "forABetterWeb": "für ein besseres Netz."
+      "forABetterWeb": "für ein besseres Netz.",
+      "links": {
+        "creativeTim": "Kreativ Tim",
+        "aboutUs": "Über uns",
+        "blog": "Bloggen",
+        "license": "Lizenz"
+      }
     },
     "dashboardNavbar": {
-      "email": "Email",
-      "podcasts": "Podcasts",
-      "shoppingCart": "Einkaufswagen",
-      "accountCircle": "Konto_Kreis",
-      "settings": "die Einstellungen",
-      "notifications": "Benachrichtigungen",
       "checkNewMsgs": "Überprüfen Sie neue Nachrichten",
       "managePodcastSessions": "Verwalten Sie Podcast-Sitzungen",
       "paymentCompleted": "Zahlung erfolgreich abgeschlossen",
       "searchHere": "Suche hier"
     },
     "defaultNavbar": { "muiDashboard2": "Material-Dashboard 2" },
-    "sidenav": { "close": "nah dran", "upgrade": "Upgrade auf Pro" },
+    "sidenav": { "upgrade": "Upgrade auf Pro" },
     "dataTable": {
-      "headCell": { "arrowDropUp": "arrow_drop_up", "arrowDropDown": "arrow_drop_down" },
       "entriesPerPage": "Einträge pro Seite",
       "showing": "Anzeigen",
       "to": "zu",
       "of": "von",
-      "entries": "Einträge",
-      "chevronLeft": "chevron_links",
-      "chevronRight": "chevron_right"
+      "entries": "Einträge"
     }
   },
-  "components": { "mdSnackbar": { "close": "nah dran" } },
   "layouts": {
     "authentication": {
       "footer": {
@@ -63,17 +55,10 @@
         "blog": "Bloggen",
         "lisence": "Lizenz",
         "madeWith": ", gemacht mit",
-        "favorite": "Favorit",
         "by": "durch",
         "creativeTimSpace": "Kreativ Tim",
         "forABetterWeb": "für ein besseres Netz.",
-        "creativeTim": "Kreativ Tim",
-        "links": {
-          "creativeTim": "Kreativ Tim",
-          "aboutUs": "Über uns",
-          "blog": "Blog",
-          "license": "Lizenz"
-        }
+        "creativeTim": "Kreativ Tim"
       },
       "resetPassword": {
         "resetPassword": "Passwort zurücksetzen",
@@ -103,101 +88,52 @@
         "vatNumber": "Umsatzsteuer-Identifikationsnummer:"
       },
       "billingInformation": { "billingInformation": "Abrechnungsdaten" },
-      "invoice": { "pictureAsPdf": "Bild_als_pdf", "pdf": "Pdf" },
+      "invoice": { "pdf": "Pdf" },
       "invoices": { "invoices": "Rechnungen", "viewAll": "Alle ansehen" },
       "paymentMethod": {
         "paymentMethod": "Zahlungsmethode",
         "add": "hinzufügen",
         "addNewCard": "neue Karte hinzufügen",
-        "cardExample1": "**** **** **** 7852",
-        "edit": "bearbeiten",
-        "cardExample2": "**** **** **** 5248",
         "toolTip": "Karte bearbeiten"
       },
       "transactions": {
         "yourTransactions": "Ihre Transaktionen",
-        "dateRange": "Datumsbereich",
-        "exampleDatesRange": "23. - 30. März 2020",
         "newest": "neueste",
         "yesterday": "gestern"
       },
-      "paypalInfoCard": {
-        "title": "Paypal",
-        "description": "Freiberufliche Bezahlung",
-        "value": "$455,00"
-      },
-      "salaryInfoCard": {
-        "title": "Gehalt",
-        "description": "Interaktiv gehören",
-        "value": "+$2000"
-      }
+      "paypalInfoCard": { "title": "Paypal" },
+      "salaryInfoCard": { "title": "Gehalt" }
     },
     "dashboard": {
-      "ordersOverview": {
-        "ordersOverview": "Bestellübersicht",
-        "arrowUpward": "Pfeil_nach oben",
-        "percentage": "24%",
-        "thisMonth": "diesen Monat",
-        "timelineItems": {
-          "item1": { "title": "$2400, Designänderungen", "dateTime": "22 DEZ 19:20 UHR" },
-          "item2": { "title": "Neue Bestellung Nr. 1832412", "dateTime": "21 DEZ 23 UHR" },
-          "item3": { "title": "Serverzahlungen für April", "dateTime": "21. DEZEMBER 21:34 UHR" },
-          "item4": {
-            "title": "Neue Karte für Bestellung Nr. 4395133 hinzugefügt",
-            "dateTime": "20 DEZ 02:20 UHR"
-          },
-          "item5": {
-            "title": "Neue Karte für Bestellung Nr. 4395133 hinzugefügt",
-            "dateTime": "18. DEZEMBER 4:54 UHR"
-          }
-        }
-      },
+      "ordersOverview": { "ordersOverview": "Bestellübersicht", "thisMonth": "diesen Monat" },
       "projects": {
-        "data": {
-          "3k": "3.000 $",
-          "notSet": "Nicht festgelegt",
-          "20k": "20.500 $",
-          "5h": "$500",
-          "2k": "2.000 $",
-          "14k": "14.000 $"
-        },
+        "data": { "notSet": "Nicht festgelegt" },
         "action": "Aktion",
         "anotherAction": "Eine weitere Aktion",
         "somethingElse": "Etwas anderes",
         "projects": "Projekte",
         "done": "erledigt",
-        "30Done": "30 fertig",
-        "thisMonth": "diesen Monat",
-        "moreVert": "mehr_vert"
+        "thisMonth": "diesen Monat"
       },
       "statisticsCards": {
-        "bookings": {
-          "title": "Buchungen",
-          "percentage": { "amount": "+55 %", "label": "als letzte Woche" }
-        },
+        "bookings": { "title": "Buchungen", "percentage": { "label": "als letzte Woche" } },
         "users": {
           "title": "Benutzer von heute",
-          "percentage": { "amount": "+3 %", "label": "als im letzten Monat" }
+          "percentage": { "label": "als im letzten Monat" }
         },
-        "revenue": {
-          "title": "Einnahmen",
-          "percentage": { "amount": "+1 %", "label": "als gestern" }
-        },
-        "followers": {
-          "title": "Anhänger",
-          "percentage": { "amount": "-", "label": "Gerade aktualisiert" }
-        }
+        "revenue": { "title": "Einnahmen", "percentage": { "label": "als gestern" } },
+        "followers": { "title": "Anhänger", "percentage": { "label": "Gerade aktualisiert" } }
       },
       "reportCharts": {
         "views": {
           "title": "Website-Aufrufe",
           "description": "Leistung der letzten Kampagne",
-          "date": "Kampagne vor 2 Tagen gesendet"
+          "date": "Kampagne vor {{someTime}} gesendet"
         },
         "sales": {
           "title": "tägliche Verkäufe",
           "description": "-",
-          "date": "vor 4 min aktualisiert"
+          "date": "vor {{someTime}} aktualisiert"
         },
         "tasks": {
           "title": "erledigte Aufgaben",
@@ -205,7 +141,6 @@
           "date": "gerade aktualisiert"
         }
       },
-      "plusPercentage": "+15 %",
       "increaseTodaySales": "Steigerung des heutigen Umsatzes."
     },
     "notifications": {
@@ -224,33 +159,26 @@
         "success": {
           "title": "Material-Dashboard",
           "content": "Hallo Welt! Dies ist eine Benachrichtigungsnachricht",
-          "dateTime": "Vor 11 Minuten"
+          "dateTime": "vor {{someTime}}"
         },
         "info": {
           "title": "Material-Dashboard",
           "content": "Hallo Welt! Dies ist eine Benachrichtigungsnachricht",
-          "dateTime": "Vor 11 Minuten"
+          "dateTime": "vor {{someTime}}"
         },
         "warning": {
           "title": "Material-Dashboard",
           "content": "Hallo Welt! Dies ist eine Benachrichtigungsnachricht",
-          "dateTime": "Vor 11 Minuten"
+          "dateTime": "vor {{someTime}}"
         },
         "error": {
           "title": "Material-Dashboard",
           "content": "Hallo Welt! Dies ist eine Benachrichtigungsnachricht",
-          "dateTime": "Vor 11 Minuten"
+          "dateTime": "vor {{someTime}}"
         }
       }
     },
     "profile": {
-      "header": {
-        "name": "Richard Davis",
-        "jobTitle": "CEO / Mitbegründer",
-        "home": "Heimat",
-        "email": "Email",
-        "settings": "die Einstellungen"
-      },
       "platformSettings": {
         "subscribe": "Newsletter abonnieren",
         "platformSettings": "Plattformeinstellungen",
@@ -262,96 +190,25 @@
         "newLaunches": "Neueinführungen und Projekte",
         "monthlyUpdates": "Monatliche Produktupdates"
       },
-      "profileInfoCard": {
-        "title": "Profil Information",
-        "description": "Hallo, ich bin Alec Thompson, Entscheidungen: Wenn Sie sich nicht entscheiden können, lautet die Antwort nein. Wenn es zwei gleich schwierige Wege gibt, wählen Sie kurzfristig den schmerzhafteren (Schmerzvermeidung schafft eine Illusion von Gleichheit).",
-        "toolTip": "Profil bearbeiten"
-      },
-      "defaultProjectCard": {
-        "actionLabel": "Projekt ansehen",
-        "modern": {
-          "label": "Projekt Nr. 2",
-          "title": "modern",
-          "description": "Während Uber eine Menge interner Managementturbulenzen durchmacht."
-        },
-        "scandinavian": {
-          "label": "Projekt 1",
-          "title": "skandinavisch",
-          "description": "Musik ist etwas, worüber jeder seine eigene Meinung hat."
-        },
-        "minimalist": {
-          "label": "Projekt Nr. 3",
-          "title": "minimalistisch",
-          "description": "Unterschiedliche Menschen haben unterschiedliche Geschmäcker und verschiedene Arten von Musik."
-        },
-        "gothic": {
-          "label": "Projekt Nr. 4",
-          "title": "gotisch",
-          "description": "Warum sollte jemand Blau über Pink wählen? Pink ist offensichtlich eine bessere Farbe."
-        }
-      },
+      "profileInfoCard": { "title": "Profil Information", "toolTip": "Profil bearbeiten" },
+      "defaultProjectCard": { "actionLabel": "Projekt ansehen" },
       "profilesListTitle": "Gespräche",
       "projects": "Projekte",
       "architects": "Architekten entwerfen Häuser"
     },
-    "rtl": {
-      "src/layouts/rtl/components/OrdersOverview/index.js:37:80:37:92": "Pfeil_nach oben",
-      "src/layouts/rtl/components/OrdersOverview/index.js:41:15:41:18": "24%",
-      "src/layouts/rtl/components/Projects/data/index.js:115:13:115:20": "14.000 $",
-      "src/layouts/rtl/components/Projects/data/index.js:136:13:136:19": "3.000 $",
-      "src/layouts/rtl/components/Projects/data/index.js:180:13:180:20": "20.500 $",
-      "src/layouts/rtl/components/Projects/data/index.js:198:13:198:17": "$500",
-      "src/layouts/rtl/components/Projects/data/index.js:219:13:219:19": "2.000 $",
-      "src/layouts/rtl/components/Projects/index.js:75:15:75:19": "erledigt",
-      "src/layouts/rtl/components/Projects/index.js:78:29:78:37": "30 Jahre",
-      "src/layouts/rtl/components/Projects/index.js:84:13:84:22": "mehr_vert",
-      "src/layouts/rtl/index.js:139:32:139:36": "+15 %"
-    },
     "tables": {
-      "data": {
-        "authorsTable": {
-          "edit": "Bearbeiten",
-          "exampleDate1": "19.09.17",
-          "exampleDate2": "24.12.08",
-          "exampleDate3": "10.04.21",
-          "exampleDate4": "14.09.20",
-          "exampleDate5": "23.04.18",
-          "exampleDate6": "01.11.19"
-        },
-        "projectsTable": {
-          "moreVert": "mehr_vert",
-          "3k": "3.400 $",
-          "cancelled": "abgebrochen",
-          "14k": "14.000 $",
-          "working": "Arbeiten",
-          "1k": "1.000 $",
-          "2c300k": "$2.300",
-          "done": "erledigt",
-          "2c500k": "2.500 $",
-          "5k": "5.000 $"
-        }
-      },
+      "data": { "authorsTable": { "edit": "Bearbeiten" } },
       "authorsTableTitle": "Autorentabelle",
       "projectsTableTitle": "Projekttabelle"
     }
   },
-  "routes": {
-    "login": "Anmeldung",
-    "assignment": "Abtretung",
+  "menuItems": {
     "dashboard": "Armaturenbrett",
-    "tableView": "Tabellenansicht",
-    "receiptLong": "quittung_lang",
-    "formatTextDirRTL": "format_textrichtung_r_to_l",
+    "tables": "Tische",
+    "billing": "Abrechnung",
     "notifications": "Benachrichtigungen",
-    "person": "Person",
-    "routeNames": {
-      "dashboard": "Armaturenbrett",
-      "tables": "Tische",
-      "billing": "Abrechnung",
-      "notifications": "Benachrichtigungen",
-      "profile": "Profil",
-      "sign-in": "Einloggen",
-      "sign-up": "Anmeldung"
-    }
+    "profile": "Profil",
+    "sign-in": "Einloggen",
+    "sign-up": "Anmeldung"
   }
 }
