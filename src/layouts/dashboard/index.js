@@ -34,7 +34,7 @@ import reportsLineChartData from "layouts/dashboard/data/reportsLineChartData";
 // Dashboard components
 import Projects from "layouts/dashboard/components/Projects";
 import OrdersOverview from "layouts/dashboard/components/OrdersOverview";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 function Dashboard() {
   const { t } = useTranslation();
@@ -54,7 +54,7 @@ function Dashboard() {
                 count={281}
                 percentage={{
                   color: "success",
-                  amount: t("layouts.dashboard.statisticsCards.bookings.percentage.amount"),
+                  amount: "55%",
                   label: t("layouts.dashboard.statisticsCards.bookings.percentage.label"),
                 }}
               />
@@ -68,7 +68,7 @@ function Dashboard() {
                 count="2,300"
                 percentage={{
                   color: "success",
-                  amount: t("layouts.dashboard.statisticsCards.users.percentage.amount"),
+                  amount: "3%",
                   label: t("layouts.dashboard.statisticsCards.users.percentage.label"),
                 }}
               />
@@ -83,7 +83,7 @@ function Dashboard() {
                 count="34k"
                 percentage={{
                   color: "success",
-                  amount: t("layouts.dashboard.statisticsCards.revenue.percentage.amount"),
+                  amount: "1%",
                   label: t("layouts.dashboard.statisticsCards.revenue.percentage.label"),
                 }}
               />
@@ -98,7 +98,7 @@ function Dashboard() {
                 count="+91"
                 percentage={{
                   color: "success",
-                  amount: t("layouts.dashboard.statisticsCards.followers.percentage.amount"),
+                  amount: "",
                   label: t("layouts.dashboard.statisticsCards.followers.percentage.label"),
                 }}
               />
@@ -113,7 +113,11 @@ function Dashboard() {
                   color="info"
                   title={t("layouts.dashboard.reportCharts.views.title")}
                   description={t("layouts.dashboard.reportCharts.views.description")}
-                  date={t("layouts.dashboard.reportCharts.views.date")}
+                  date={
+                    <Trans i18nKey="layouts.dashboard.reportCharts.views.date">
+                      campaign sent {{ someTime: "2 days" }} ago
+                    </Trans>
+                  }
                   chart={reportsBarChartData}
                 />
               </MDBox>
@@ -125,11 +129,14 @@ function Dashboard() {
                   title={t("layouts.dashboard.reportCharts.sales.title")}
                   description={
                     <>
-                      (<strong>{t("layouts.dashboard.plusPercentage")}</strong>){" "}
-                      {t("layouts.dashboard.increaseTodaySales")}
+                      (<strong>15%</strong>) {t("layouts.dashboard.increaseTodaySales")}
                     </>
                   }
-                  date={t("layouts.dashboard.reportCharts.sales.date")}
+                  date={
+                    <Trans i18nKey="layouts.dashboard.reportCharts.sales.date">
+                      updated {{ someTime: "4 min" }} ago
+                    </Trans>
+                  }
                   chart={sales}
                 />
               </MDBox>

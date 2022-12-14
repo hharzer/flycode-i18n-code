@@ -98,7 +98,7 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
           sx={{ textDecoration: "none" }}
         >
           <SidenavCollapse
-            name={t(`routes.routeNames.${key}`)}
+            name={t(`menuItems.${key}`)}
             icon={icon}
             active={key === collapseName}
             noCollapse={noCollapse}
@@ -106,11 +106,7 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
         </Link>
       ) : (
         <NavLink key={key} to={route}>
-          <SidenavCollapse
-            name={t(`routes.routeNames.${key}`)}
-            icon={icon}
-            active={key === collapseName}
-          />
+          <SidenavCollapse name={t(`menuItems.${key}`)} icon={icon} active={key === collapseName} />
         </NavLink>
       );
     } else if (type === "title") {

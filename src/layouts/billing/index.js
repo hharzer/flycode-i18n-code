@@ -50,16 +50,16 @@ function Billing() {
                   <DefaultInfoCard
                     icon="account_balance"
                     title={t("layouts.billing.salaryInfoCard.title")}
-                    description={t("layouts.billing.salaryInfoCard.description")}
-                    value={t("layouts.billing.salaryInfoCard.value")}
+                    description={"Belong Interactive"}
+                    value={"+$2000"}
                   />
                 </Grid>
                 <Grid item xs={12} md={6} xl={3}>
                   <DefaultInfoCard
                     icon="paypal"
                     title={t("layouts.billing.paypalInfoCard.title")}
-                    description={t("layouts.billing.paypalInfoCard.description")}
-                    value={t("layouts.billing.paypalInfoCard.value")}
+                    description={"Freelance Payment"}
+                    value={"$455.00"}
                   />
                 </Grid>
                 <Grid item xs={12}>

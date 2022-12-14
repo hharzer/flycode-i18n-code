@@ -94,7 +94,7 @@ export default function useProjectsData() {
         ),
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
-            {t("layouts.dashboard.projects.data.14k")}
+            $14,000
           </MDTypography>
         ),
         completion: (
@@ -115,7 +115,7 @@ export default function useProjectsData() {
         ),
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
-            {t("layouts.dashboard.projects.data.3k")}
+            $3,000
           </MDTypography>
         ),
         completion: (
@@ -159,7 +159,7 @@ export default function useProjectsData() {
         ),
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
-            {t("layouts.dashboard.projects.data.20k")}
+            $20,500
           </MDTypography>
         ),
         completion: (
@@ -177,7 +177,7 @@ export default function useProjectsData() {
         ),
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
-            {t("layouts.dashboard.projects.data.5h")}
+            $500
           </MDTypography>
         ),
         completion: (
@@ -198,7 +198,7 @@ export default function useProjectsData() {
         ),
         budget: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
-            {t("layouts.dashboard.projects.data.2k")}
+            $2,000
           </MDTypography>
         ),
         completion: (

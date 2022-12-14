@@ -68,7 +68,7 @@ function Overview() {
               <Divider orientation="vertical" sx={{ ml: -2, mr: 1 }} />
               <ProfileInfoCard
                 title={t("layouts.profile.profileInfoCard.title")}
-                description={t("layouts.profile.profileInfoCard.description")}
+                description="Hi, I’m Alec Thompson, Decisions: If you can’t decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality)."
                 info={{
                   fullName: "Alec M. Thompson",
                   mobile: "(44) 123 1234 123",
@@ -121,9 +121,9 @@ function Overview() {
             <Grid item xs={12} md={6} xl={3}>
               <DefaultProjectCard
                 image={homeDecor1}
-                label={t("layouts.profile.defaultProjectCard.modern.label")}
-                title={t("layouts.profile.defaultProjectCard.modern.title")}
-                description={t("layouts.profile.defaultProjectCard.modern.description")}
+                label="project #2"
+                title="modern"
+                description="As Uber works through a huge amount of internal management turmoil."
                 action={{
                   type: "internal",
                   route: "/pages/profile/profile-overview",
@@ -141,9 +141,9 @@ function Overview() {
             <Grid item xs={12} md={6} xl={3}>
               <DefaultProjectCard
                 image={homeDecor2}
-                label={t("layouts.profile.defaultProjectCard.scandinavian.label")}
-                title={t("layouts.profile.defaultProjectCard.scandinavian.title")}
-                description={t("layouts.profile.defaultProjectCard.scandinavian.description")}
+                label="project #1"
+                title="scandinavian"
+                description="Music is something that everyone has their own specific opinion about."
                 action={{
                   type: "internal",
                   route: "/pages/profile/profile-overview",
@@ -161,9 +161,9 @@ function Overview() {
             <Grid item xs={12} md={6} xl={3}>
               <DefaultProjectCard
                 image={homeDecor3}
-                label={t("layouts.profile.defaultProjectCard.minimalist.label")}
-                title={t("layouts.profile.defaultProjectCard.minimalist.title")}
-                description={t("layouts.profile.defaultProjectCard.minimalist.description")}
+                label="project #3"
+                title="minimalist"
+                description="Different people have different taste, and various types of music."
                 action={{
                   type: "internal",
                   route: "/pages/profile/profile-overview",
@@ -181,9 +181,9 @@ function Overview() {
             <Grid item xs={12} md={6} xl={3}>
               <DefaultProjectCard
                 image={homeDecor4}
-                label={t("layouts.profile.defaultProjectCard.gothic.label")}
-                title={t("layouts.profile.defaultProjectCard.gothic.title")}
-                description={t("layouts.profile.defaultProjectCard.gothic.description")}
+                label="project #4"
+                title="gothic"
+                description="Why would anyone pick blue over pink? Pink is obviously a better color."
                 action={{
                   type: "internal",
                   route: "/pages/profile/profile-overview",

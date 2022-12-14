@@ -101,10 +101,10 @@ function Header({ children }) {
           <Grid item>
             <MDBox height="100%" mt={0.5} lineHeight={1}>
               <MDTypography variant="h5" fontWeight="medium">
-                {t("layouts.profile.header.name")}
+                Richard Davis
               </MDTypography>
               <MDTypography variant="button" color="text" fontWeight="regular">
-                {t("layouts.profile.header.jobTitle")}
+                CEO / Co-Founder
               </MDTypography>
             </MDBox>
           </Grid>

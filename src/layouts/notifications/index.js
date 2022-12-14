@@ -30,7 +30,7 @@ import MDSnackbar from "components/MDSnackbar";
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 function Notifications() {
   const { t } = useTranslation();
@@ -64,7 +64,11 @@ function Notifications() {
       icon="check"
       title={t("layouts.notifications.snackbars.success.title")}
       content={t("layouts.notifications.snackbars.success.content")}
-      dateTime={t("layouts.notifications.snackbars.success.dateTime")}
+      dateTime={
+        <Trans i18nKey="layouts.notifications.snackbars.success.dateTime">
+          {{ someTime: "11 mins" }} ago
+        </Trans>
+      }
       open={successSB}
       onClose={closeSuccessSB}
       close={closeSuccessSB}
@@ -77,7 +81,11 @@ function Notifications() {
       icon="notifications"
       title={t("layouts.notifications.snackbars.info.title")}
       content={t("layouts.notifications.snackbars.info.content")}
-      dateTime={t("layouts.notifications.snackbars.info.dateTime")}
+      dateTime={
+        <Trans i18nKey="layouts.notifications.snackbars.info.dateTime">
+          {{ someTime: "11 mins" }} ago
+        </Trans>
+      }
       open={infoSB}
       onClose={closeInfoSB}
       close={closeInfoSB}
@@ -90,7 +98,11 @@ function Notifications() {
       icon="star"
       title={t("layouts.notifications.snackbars.warning.title")}
       content={t("layouts.notifications.snackbars.warning.content")}
-      dateTime={t("layouts.notifications.snackbars.warning.dateTime")}
+      dateTime={
+        <Trans i18nKey="layouts.notifications.snackbars.warning.dateTime">
+          {{ someTime: "11 mins" }} ago
+        </Trans>
+      }
       open={warningSB}
       onClose={closeWarningSB}
       close={closeWarningSB}
@@ -104,7 +116,11 @@ function Notifications() {
       icon="warning"
       title={t("layouts.notifications.snackbars.error.title")}
       content={t("layouts.notifications.snackbars.error.content")}
-      dateTime={t("layouts.notifications.snackbars.error.dateTime")}
+      dateTime={
+        <Trans i18nKey="layouts.notifications.snackbars.error.dateTime">
+          {{ someTime: "11 mins" }} ago
+        </Trans>
+      }
       open={errorSB}
       onClose={closeErrorSB}
       close={closeErrorSB}

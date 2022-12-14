@@ -70,7 +70,7 @@ export default function useAuthorsTableData() {
         ),
         employed: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            {t("layouts.tables.data.authorsTable.exampleDate1")}
+            19/09/17
           </MDTypography>
         ),
         action: (
@@ -89,7 +89,7 @@ export default function useAuthorsTableData() {
         ),
         employed: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            {t("layouts.tables.data.authorsTable.exampleDate2")}
+            24/12/08
           </MDTypography>
         ),
         action: (
@@ -108,7 +108,7 @@ export default function useAuthorsTableData() {
         ),
         employed: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            {t("layouts.tables.data.authorsTable.exampleDate3")}
+            04/10/21
           </MDTypography>
         ),
         action: (
@@ -127,7 +127,7 @@ export default function useAuthorsTableData() {
         ),
         employed: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            {t("layouts.tables.data.authorsTable.exampleDate4")}
+            14/09/20
           </MDTypography>
         ),
         action: (
@@ -146,7 +146,7 @@ export default function useAuthorsTableData() {
         ),
         employed: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            {t("layouts.tables.data.authorsTable.exampleDate5")}
+            23/04/18
           </MDTypography>
         ),
         action: (
@@ -165,7 +165,7 @@ export default function useAuthorsTableData() {
         ),
         employed: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            {t("layouts.tables.data.authorsTable.exampleDate6")}
+            11/01/19
           </MDTypography>
         ),
         action: (

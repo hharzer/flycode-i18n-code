@@ -51,7 +51,7 @@ import Icon from "@mui/material/Icon";
 const routes = [
   {
     type: "collapse",
-    name: i18n.t("routes.routeNames.dashboard"),
+    name: i18n.t("menuItems.dashboard"),
     key: "dashboard",
     icon: <Icon fontSize="small">dashboard</Icon>,
     route: "/dashboard",
@@ -59,7 +59,7 @@ const routes = [
   },
   {
     type: "collapse",
-    name: i18n.t("routes.routeNames.tables"),
+    name: i18n.t("menuItems.tables"),
     key: "tables",
     icon: <Icon fontSize="small">table_view</Icon>,
     route: "/tables",
@@ -67,7 +67,7 @@ const routes = [
   },
   {
     type: "collapse",
-    name: i18n.t("routes.routeNames.billing"),
+    name: i18n.t("menuItems.billing"),
     key: "billing",
     icon: <Icon fontSize="small">receipt_long</Icon>,
     route: "/billing",
@@ -75,7 +75,7 @@ const routes = [
   },
   {
     type: "collapse",
-    name: i18n.t("routes.routeNames.notifications"),
+    name: i18n.t("menuItems.notifications"),
     key: "notifications",
     icon: <Icon fontSize="small">notifications</Icon>,
     route: "/notifications",
@@ -83,7 +83,7 @@ const routes = [
   },
   {
     type: "collapse",
-    name: i18n.t("routes.routeNames.profile"),
+    name: i18n.t("menuItems.profile"),
     key: "profile",
     icon: <Icon fontSize="small">person</Icon>,
     route: "/profile",
@@ -91,7 +91,7 @@ const routes = [
   },
   {
     type: "collapse",
-    name: i18n.t("routes.routeNames.signIn"),
+    name: i18n.t("menuItems.signIn"),
     key: "sign-in",
     icon: <Icon fontSize="small">login</Icon>,
     route: "/authentication/sign-in",
@@ -99,7 +99,7 @@ const routes = [
   },
   {
     type: "collapse",
-    name: i18n.t("routes.routeNames.signUp"),
+    name: i18n.t("menuItems.signUp"),
     key: "sign-up",
     icon: <Icon fontSize="small">assignment</Icon>,
     route: "/authentication/sign-up",

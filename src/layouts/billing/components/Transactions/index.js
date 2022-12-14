@@ -42,7 +42,7 @@ function Transactions() {
             </Icon>
           </MDBox>
           <MDTypography variant="button" color="text" fontWeight="regular">
-            {t("layouts.billing.transactions.exampleDatesRange")}
+            23 - 30 March 2020
           </MDTypography>
         </MDBox>
       </MDBox>

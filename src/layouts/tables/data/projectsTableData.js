@@ -69,12 +69,12 @@ export default function useProjectsTableData() {
         project: <Project image={LogoAsana} name="Asana" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
-            {t("layouts.tables.data.projectsTable.2c500k")}
+            $2,500
           </MDTypography>
         ),
         status: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            {t("layouts.tables.data.projectsTable.working")}
+            working
           </MDTypography>
         ),
         completion: <Progress color="info" value={60} />,
@@ -88,12 +88,12 @@ export default function useProjectsTableData() {
         project: <Project image={logoGithub} name="Github" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
-            {t("layouts.tables.data.projectsTable.5k")}
+            $5,000
           </MDTypography>
         ),
         status: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            {t("layouts.tables.data.projectsTable.done")}
+            done
           </MDTypography>
         ),
         completion: <Progress color="success" value={100} />,
@@ -107,12 +107,12 @@ export default function useProjectsTableData() {
         project: <Project image={logoAtlassian} name="Atlassian" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
-            {t("layouts.tables.data.projectsTable.3k")}
+            $3,400
           </MDTypography>
         ),
         status: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            {t("layouts.tables.data.projectsTable.cancelled")}
+            cancelled
           </MDTypography>
         ),
         completion: <Progress color="error" value={30} />,
@@ -126,12 +126,12 @@ export default function useProjectsTableData() {
         project: <Project image={logoSpotify} name="Spotify" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
-            {t("layouts.tables.data.projectsTable.14k")}
+            $14,000
           </MDTypography>
         ),
         status: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            {t("layouts.tables.data.projectsTable.working")}
+            working
           </MDTypography>
         ),
         completion: <Progress color="info" value={80} />,
@@ -145,12 +145,12 @@ export default function useProjectsTableData() {
         project: <Project image={logoSlack} name="Slack" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
-            {t("layouts.tables.data.projectsTable.1k")}
+            $1,000
           </MDTypography>
         ),
         status: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            {t("layouts.tables.data.projectsTable.cancelled")}
+            cancelled
           </MDTypography>
         ),
         completion: <Progress color="error" value={0} />,
@@ -164,12 +164,12 @@ export default function useProjectsTableData() {
         project: <Project image={logoInvesion} name="Invesion" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
-            {t("layouts.tables.data.projectsTable.2c300k")}
+            $2,300
           </MDTypography>
         ),
         status: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            {t("layouts.tables.data.projectsTable.done")}
+            done
           </MDTypography>
         ),
         completion: <Progress color="success" value={100} />,

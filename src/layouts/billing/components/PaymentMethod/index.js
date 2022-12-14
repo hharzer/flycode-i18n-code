@@ -64,7 +64,7 @@ function PaymentMethod() {
             >
               <MDBox component="img" src={masterCardLogo} alt="master card" width="10%" mr={2} />
               <MDTypography variant="h6" fontWeight="medium">
-                {t("layouts.billing.paymentMethod.cardExample1")}
+                **** **** **** 7852
               </MDTypography>
               <MDBox ml="auto" lineHeight={0} color={darkMode ? "white" : "dark"}>
                 <Tooltip title={t("layouts.billing.paymentMethod.toolTip")} placement="top">
@@ -89,7 +89,7 @@ function PaymentMethod() {
             >
               <MDBox component="img" src={visaLogo} alt="master card" width="10%" mr={2} />
               <MDTypography variant="h6" fontWeight="medium">
-                {t("layouts.billing.paymentMethod.cardExample2")}
+                **** **** **** 5248
               </MDTypography>
               <MDBox ml="auto" lineHeight={0} color={darkMode ? "white" : "dark"}>
                 <Tooltip title={t("layouts.billing.paymentMethod.toolTip")} placement="top">

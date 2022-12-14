@@ -79,7 +79,7 @@ function Projects() {
               done
             </Icon>
             <MDTypography variant="button" fontWeight="regular" color="text">
-              &nbsp;<strong>{t("layouts.dashboard.projects.30Done")}</strong>{" "}
+              &nbsp;<strong>30 {t("layouts.dashboard.projects.done")}</strong>{" "}
               {t("layouts.dashboard.projects.thisMonth")}
             </MDTypography>
           </MDBox>
