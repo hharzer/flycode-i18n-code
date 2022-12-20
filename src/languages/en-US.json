@@ -2,7 +2,7 @@
   "examples": {
     "cards": {
       "infoCards": {
-        "social": "Social: "
+        "social": "social: "
       },
       "masterCard": {
         "cardHolder": "Card Holder",
