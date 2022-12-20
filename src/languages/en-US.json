@@ -6,7 +6,7 @@
       },
       "masterCard": {
         "cardHolder": "Card Holder",
-        "expires": "Expires"
+        "expires": "Expires at"
       }
     },
     "configurator": {
