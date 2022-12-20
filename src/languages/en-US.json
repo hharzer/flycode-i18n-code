@@ -2,11 +2,11 @@
   "examples": {
     "cards": {
       "infoCards": {
-        "social": "Social: "
+        "social": "social: "
       },
       "masterCard": {
         "cardHolder": "Card Holder",
-        "expires": "Expires"
+        "expires": "Expires at"
       }
     },
     "configurator": {
